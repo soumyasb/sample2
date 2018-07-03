@@ -1,24 +1,13 @@
 import React, { Component } from "react";
-import ReactDOM from 'react-dom';
 import { ScrollPanel } from "primereact/components/scrollpanel/ScrollPanel";
-import { DataTable } from 'primereact/components/datatable/DataTable';
-import { Column } from 'primereact/components/column/Column';
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { initNewsItemPage, getNewsItemPage } from "../../../../store/actions/newsItemActions";
-import { Input, Table, Icon, Switch, Radio, Divider, Form, Modal, Button } from 'antd';
+import { initNewsItemPage, getCreateNewsItemObj } from "../../../../store/actions/newsItemActions";
+import { Table, Button } from 'antd';
 import { showModal } from "../../../../store/actions/uiActions";
-import moment, { calendarFormat } from "moment";
+import moment from "moment";
 import NewsModal from './NewsModal';
-
-const data = [];
-
-const FormItem = Form.Item;
-
-const title = () => 'News Items';
-const showHeader = true;
-const scroll = { y: 240 };
-const pagination = { position: 'bottom' };
+import createNewsItemObj from '../../../../mocks/createnewsitem.json';
 
 class NewsItemPage extends Component {
     
@@ -81,13 +70,13 @@ class NewsItemPage extends Component {
                 moment(endDate).format("MM/DD/YYYY")
             },
             {
-                 width: '4%',
-                render: () => {
+                width: '4%',
+                render: (text, item) => {
                     return (
                         <div style={{textAlign: "center"}}>
-                            <a onClick={e => this.showModal(e, 'edit')}>Edit</a>
-                            <br/><a onClick={e => this.showModal(e, 'details')}>Details</a>
-                            <br/><a onClick={e => this.showModal(e, 'delete')}>Delete</a>
+                            <a onClick={e => this.showModal(e, 'edit', item.newsId)}>Edit</a>
+                            <br/><a onClick={e => this.showModal(e, 'details', item.newsId)}>Details</a>
+                            <br/><a onClick={e => this.showModal(e, 'delete', item.newsId)}>Delete</a>
                         </div>
                     );
                 },
@@ -95,7 +84,7 @@ class NewsItemPage extends Component {
         ];
 
         this.state = {
-            newsItemObj: null,
+            newsItemObj: createNewsItemObj,
         }
 
         this.showModal = this.showModal.bind(this);
@@ -105,11 +94,15 @@ class NewsItemPage extends Component {
 
     componentWillMount() {
         this.props.initNewsItemPage();
-        //this.setState({newsItem:data});
     }
 
-    showModal(e, actype) {
+    showModal(e, actype, newsId) {
         this.props.showModal(true, actype);
+        
+        if(newsId) {
+            const newsItemObj = this.props.newsItem.list.find(n => n.newsId === newsId);
+            this.setState({ newsItemObj }); 
+        }
     }
 
     handleOk(e) {
@@ -121,13 +114,6 @@ class NewsItemPage extends Component {
     }
 
     render() {
-        const newsItemProps = this.props.newsItem;
-        const result = Object.keys(newsItemProps).map(function (key) {
-            return newsItemProps[key];
-        });
-        console.log(result);
-        this.state = {result};
-
         const columns = this.columns.map((col) => {
             return {
                 ...col,
@@ -159,7 +145,7 @@ class NewsItemPage extends Component {
                         showHeader = {true}
                         bordered
                         expandRowByClick={true}
-                        dataSource={this.state.result}
+                        dataSource={this.props.newsItem.list}
                         expandedRowRender={record => <p style={{ margin:10 }}>{record.newsText}</p>}
                         columns={columns}
                         pagination={{ pageSize: 8}}
@@ -188,8 +174,8 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return bindActionCreators(
         {
-            getNewsItemPage,
             initNewsItemPage,
+            getCreateNewsItemObj,
             showModal
         },
         dispatch
