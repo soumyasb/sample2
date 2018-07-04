@@ -1,44 +1,113 @@
 import React, { Component } from "react";
-import { Modal, Form, Input, Select, Checkbox, DatePicker } from 'antd';
+import moment from 'moment';
+import { Modal, Form, Input, Select, Checkbox, DatePicker, Button } from 'antd';
+import { bindInstanceMethods } from '../../../utils';
 
 const FormItem = Form.Item;
 const { Option } = Select;
 const { TextArea } = Input;
 
+const formItemLayout = {
+    labelCol: { span: 6 },
+    wrapperCol: { span: 18 },
+};
+
+const getModalSettings = (actype, onOk, onCancel) => {
+    let title, okText = '';
+    let footer = [];
+
+    switch(actype) {
+        case 'create': 
+            title = 'Create News Item';
+            okText = 'Create';
+            footer = [
+                <Button key="Cancel" onClick={onCancel}>Cancel</Button>,
+                <Button type="primary" key="Ok" onClick={onOk}>{okText}</Button>
+            ];
+            break;
+        case 'edit': 
+            title = 'Edit News Item';
+            okText = 'Edit';
+            footer = [
+                <Button key="Cancel" onClick={onCancel}>Cancel</Button>,
+                <Button type="primary" key="Ok" onClick={onOk}>{okText}</Button>
+            ];
+            break;
+        case 'details': 
+            title = 'details - TODO';
+            okText = 'Details';
+            footer = [
+                <Button key="Close" onClick={onCancel}>Close</Button>
+            ];
+            break;
+        case 'delete': 
+            title = 'delete - TODO';
+            okText = 'Delete';
+            footer = [
+                <Button key="Cancel" onClick={onCancel}>Cancel</Button>,
+                <Button type="primary" key="Ok" onClick={onOk}>{okText}</Button>
+            ];
+            break;
+        default: 
+            title = 'Create News Item';
+    }
+
+    return {
+        title,
+        okText,
+        footer,
+    }
+
+}
+
 class NewsModal extends Component {
-    render() {
-        const newsItemObj = this.props.newsItemObj;
+    constructor(props) {
+        super(props);
 
-        const formItemLayout = {
-            labelCol: { span: 6 },
-            wrapperCol: { span: 18 },
-        };
-
-        let title = 'Create News Item';debugger
-        switch(this.props.actionType) {
-            case 'create': 
-                title = 'Create News Item';
-                break;
-            case 'edit': 
-                title = 'Edit News Item';
-                break;
-            case 'details': 
-                title = 'details - TODO';
-                break;
-            case 'delete': 
-                title = 'delete - TODO';
-                break;
-            default: 
-                title = 'Create News Item';
+        this.state ={
+            newsItemObj: props.newsItemObj
         }
+
+        bindInstanceMethods(this);
+    }
+
+    componentWillReceiveProps(nextProps) {
+        if (this.props.newsItemObj !== nextProps.newsItemObj) {
+            this.setState({ newsItemObj: nextProps.newsItemObj });
+        } 
+    }
+
+    onPriorityChange(e, val) {
+        const { newsItemObj } = this.state;
+        newsItemObj.priority = val;
+        this.setState({ newsItemObj });
+    }
+
+    onNewsTextChange(e) {
+        const { newsItemObj } = this.state;
+        newsItemObj.newsText = e.target.value;
+        this.setState({ newsItemObj });
+    }
+
+    onSubjectChange(e) {
+        const { newsItemObj } = this.state;
+        newsItemObj.subject = e.target.value;
+        this.setState({ newsItemObj });
+    }
+
+    render() {
+        let { newsItemObj } = this.state;
+        const modalSettings = getModalSettings(...this.props);
 
         return (
             <Modal
                 visible={this.props.modalVisible}
                 onOk={this.props.onOk}
                 onCancel={this.props.onCancel}
-                title={title}
-                okText={this.props.actionType}   
+                title={modalSettings.title}
+                okText={modalSettings.okText} 
+                footer={modalSettings.footer}
+                width={'750px'}
             >
                 <div>
                     <Form layout={'horizontal'}>
@@ -55,27 +124,28 @@ class NewsModal extends Component {
                         <FormItem
                             label="Subject"
                             {...formItemLayout}
-                            validateStatus={'error'}
                         >
-                            <Input value={newsItemObj.subject} placeholder="Subject" />
+                            <Input value={newsItemObj.subject} placeholder="Subject" onChange={this.onSubjectChange} />
                         </FormItem>
                         <FormItem
                             label="News Text"
                             {...formItemLayout}
                         >
-                            <TextArea value={newsItemObj.newsText} rows="6" />
+                            <TextArea value={newsItemObj.newsText} rows="6" onChange={this.onNewsTextChange} />
                         </FormItem>
                         <FormItem
                             label="Start Date"
                             {...formItemLayout}
                         >
-                            <DatePicker placeholder="Start Date" onChange={this.onChange} />
+                            <DatePicker placeholder="Start Date"
+                                defaultValue={moment(newsItemObj.startDate, 'YYYY-MM-DD')} onChange={() => {}} />
                         </FormItem>
                         <FormItem
                             label="End Date"
                             {...formItemLayout}
                         >
-                            <DatePicker placeholder="End Date" onChange={this.onChange} />
+                            <DatePicker placeholder="End Date"
+                                defaultValue={moment(newsItemObj.endDate, 'YYYY-MM-DD')} onChange={() => {}} />
                         </FormItem>
                         <FormItem
                             label=""
