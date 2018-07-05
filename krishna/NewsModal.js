@@ -12,11 +12,11 @@ const formItemLayout = {
     wrapperCol: { span: 18 },
 };
 
-const getModalSettings = (actype, onOk, onCancel) => {
+const getModalSettings = ({ actionType, onOk, onCancel }) => {
     let title, okText = '';
     let footer = [];
 
-    switch(actype) {
+    switch(actionType) {
         case 'create': 
             title = 'Create News Item';
             okText = 'Create';
@@ -95,15 +95,23 @@ class NewsModal extends Component {
         this.setState({ newsItemObj });
     }
 
+    handleOk() {
+        this.props.onOk(this.state.newsItemObj);
+    }
+
+    handleCancel() {
+        this.props.onCancel(this.state.newsItemObj);
+    }
+
     render() {
         let { newsItemObj } = this.state;
-        const modalSettings = getModalSettings(...this.props);
+        const modalSettings = getModalSettings(this.props);
 
         return (
             <Modal
                 visible={this.props.modalVisible}
-                onOk={this.props.onOk}
-                onCancel={this.props.onCancel}
+                onOk={this.handleOk}
+                onCancel={this.handleCancel}
                 title={modalSettings.title}
                 okText={modalSettings.okText} 
                 footer={modalSettings.footer}
@@ -114,12 +122,16 @@ class NewsModal extends Component {
                         <FormItem
                             label="Priority"
                             {...formItemLayout}
-                        >
+                        > 
+                            {this.props.actionType === 'create' ? 
+                                <div>sdfdsfdssdf</div> 
+                            :
                             <Select value={newsItemObj.priority} onChange={this.onPriorityChange}>
                                <Option value="A">Urgent</Option>
                                <Option value="B">Normal</Option>
                                <Option value="C">Low</Option>
                             </Select>
+                            }
                         </FormItem>
                         <FormItem
                             label="Subject"
@@ -151,7 +163,7 @@ class NewsModal extends Component {
                             label=""
                             {...formItemLayout}
                         >
-                            <Checkbox placeholder="input placeholder">
+                            <Checkbox checked={this.state.checked} onChange={this.onchecked}  placeholder="input placeholder">
                                 All offices in your region?
                             </Checkbox>
                         </FormItem>

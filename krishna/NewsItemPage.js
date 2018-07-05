@@ -39,9 +39,10 @@ class NewsItemPage extends Component {
                 dataIndex: 'newsText',
                 width: '42%',
                 key: 'newsText',
+                className: 'newsItemsPage-newsText',
                 render: (newsText) => 
                 {
-                    return <div style={{wordBreak: "keep-all"}}><p>{newsText}</p></div>
+                    return <div style={{wordBreak: "keep-all" }}><p>{newsText}</p></div>
                 }
             },
             {
@@ -84,7 +85,9 @@ class NewsItemPage extends Component {
         ];
 
         this.state = {
-            newsItemObj: createNewsItemObj
+            newsItemObj: createNewsItemObj,
+            actionType: 'create',
+            showModal: false,
         }
 
         this.showModal = this.showModal.bind(this);
@@ -97,8 +100,8 @@ class NewsItemPage extends Component {
     }
 
     showModal(e, actype, newsId) {
-        this.props.showModal(true, actype);
-        
+        this.setState({ actionType: actype, showModal: true });
+
         if (actype !== 'create') {
             if(newsId) {
                 const newsItemObj = this.props.newsItem.list.find(n => n.newsId === newsId);
@@ -107,17 +110,16 @@ class NewsItemPage extends Component {
         }
     }
 
-    handleOk() {
-        this.props.showModal(false);
+    handleOk(newsItemObj) {
+        this.setState({ showModal: false });
+
     }
 
-    handleCancel() {
-        this.props.showModal(false);
+    handleCancel(newsItemObj) {
+        this.setState({ showModal: false });
     }
 
     render() {
-        debugger
-
         const columns = this.columns.map((col) => {
             return {
                 ...col,
@@ -157,10 +159,10 @@ class NewsItemPage extends Component {
                     />
                 </div>
                 <NewsModal 
-                    modalVisible={this.props.ui.modalVisible}
+                    modalVisible={this.state.showModal}
                     onOk={this.handleOk}
                     onCancel={this.handleCancel}
-                    actionType={this.props.ui.actionType}
+                    actionType={this.state.actionType}
                     newsItemObj={this.state.newsItemObj}
                 />
              </ScrollPanel>
