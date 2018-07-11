@@ -13,31 +13,27 @@ class Search extends Component {
 
     componentDidMount() {
         // TODO - Call your search api action here....
-        
-       this.searchResults(this.props.location.search, searchDataJson);
+        const params = new URLSearchParams(this.props.location.search);
+        const searchText =  params.get('searchText') ? params.get('searchText') : '';
+
+        //api call - parameter as searchtext
+
     }
 
     componentWillReceiveProps(nextProps) {
         if (this.props.location.search !== nextProps.location.search) {
             // Whenever the search text changes.. call the search api again here...
             // remove the existing line below...
+            const params = new URLSearchParams(nextProps.location.search);
+            const searchText =  params.get('searchText') ? params.get('searchText') : '';
 
-            this.searchResults(nextProps.location.search, this.props.searchData);
+            //api call - parameter as searchtext
+
         }
 
         if (this.props.searchData !== nextProps.searchData) {
-            this.searchResults(nextProps.location.search, nextProps.searchData);
+            this.setState({ searchList: nextProps.searchData });
         }
-    }
-
-    searchResults(locationSearch, searchData = searchDataJson) {
-        const params = new URLSearchParams(locationSearch);
-        const searchText =  params.get('searchText') ? params.get('searchText').toLowerCase() : '';
-
-        const searchList = searchData.results.filter(s => s.firstName.toLowerCase().includes(searchText)
-            || s.lastName.toLowerCase().includes(searchText) || s.dlNumber.toLowerCase().includes(searchText));
-
-        this.setState({ searchList });
     }
 
     render() {

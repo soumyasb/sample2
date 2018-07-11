@@ -1,17 +1,15 @@
 import React, { Component } from "react";
 import { Menu, Icon, Dropdown, Input } from "antd";
 import { connect } from "react-redux";
-import { Redirect, withRouter } from "react-router-dom";
+import { bindActionCreators } from "redux";
+import { withRouter } from "react-router-dom";
+import { initHomePage } from "../store/actions/homePageActions";
 
 const Search = Input.Search;
 
 class header extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      searched: '',
-    }
+  componentDidMount() {
+    this.props.initHomePage();
   }
 
   handleSearch(searchText) {
@@ -49,7 +47,6 @@ class header extends Component {
               onSearch={value => { this.handleSearch(value); }}
               enterButton
             />
-            {this.state.searched && <Redirect to='/Search' />}
           </div>
         </div>
       </div>
@@ -57,10 +54,19 @@ class header extends Component {
   }
 }
 
+const mapDispatchToProps = dispatch => {
+  return bindActionCreators(
+    {
+      initHomePage,
+    },
+    dispatch
+  );
+};
+
 const mapStateToProps = state => {
   return {
     homePage: state.homePage
   };
 };
 
-export default withRouter(connect(mapStateToProps)(header));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(header));
