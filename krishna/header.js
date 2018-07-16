@@ -14,7 +14,7 @@ class header extends Component {
 
   handleSearch(searchText) {
     if (searchText) {
-      this.props.history.push(`/search?searchText=${searchText}`);
+      this.props.history.push(`/search/searchText/${searchText}`);
     }
   }
 

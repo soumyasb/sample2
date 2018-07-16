@@ -10,10 +10,7 @@ const content = () => (
     <Switch>
       <Route exact path="/" component={HomePage} />
       <Route exact path="/news" component={NewsItemPage} />
-      <Route path="/search" component={Search} />
-      {/* <Route path='/search' 
-          render={ props => <Search {...props} />}
-        /> */}
+      <Route path="/search/searchText/:searchText" component={Search} />
     </Switch>
   </div>
 );

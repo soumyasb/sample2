@@ -13,19 +13,17 @@ class Search extends Component {
 
     componentDidMount() {
         // TODO - Call your search api action here....
-        const params = new URLSearchParams(this.props.location.search);
-        const searchText =  params.get('searchText') ? params.get('searchText') : '';
+        const searchText =  this.props.match.params.searchText || '';
 
         //api call - parameter as searchtext
 
     }
 
     componentWillReceiveProps(nextProps) {
-        if (this.props.location.search !== nextProps.location.search) {
+        if (this.props.match.params !== nextProps.match.params) {
             // Whenever the search text changes.. call the search api again here...
             // remove the existing line below...
-            const params = new URLSearchParams(nextProps.location.search);
-            const searchText =  params.get('searchText') ? params.get('searchText') : '';
+            const searchText =  this.props.match.params.searchText || '';
 
             //api call - parameter as searchtext
 
