@@ -12,6 +12,10 @@ class header extends Component {
     this.props.initHomePage();
   }
 
+  componentWillReceiveProps(nextProps) {
+    !localStorage.getItem('userInfo') && localStorage.setItem('userInfo', JSON.stringify(nextProps.homePage));
+  }
+
   handleSearch(searchText) {
     if (searchText) {
       this.props.history.push(`/search/searchText/${searchText}`);

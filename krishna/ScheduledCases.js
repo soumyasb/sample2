@@ -15,6 +15,8 @@ class ScheduledCases extends Component {
     }    
 
     render() {
+        console.log(JSON.parse(localStorage.getItem('userInfo')));
+        
         const columns =[
             {
                 title: 'Status',
@@ -40,11 +42,8 @@ class ScheduledCases extends Component {
             }, {
                 title: 'Sched Time',
                 dataIndex: 'dt_Cntct_Strt_Tim',
+                key: 'timeHoursMins',
                 render: (text) => moment(text).format('hh:mm A'),
-            }, {
-                title: 'Status',
-                dataIndex: 'CD_STATUS_REC',
-                key: 'CD_STATUS_REC',
             }, {
                 title: 'Location',
                 dataIndex: 'cd_Off_Abbr',
