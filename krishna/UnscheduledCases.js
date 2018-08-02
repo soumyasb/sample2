@@ -15,28 +15,34 @@ class UnscheduledCases extends Component {
     }    
 
     render() {
+        console.log(JSON.parse(sessionStorage.getItem('userInfo')));
         const columns =[
             {
                 title: 'Status',
                 dataIndex: 'CD_STATUS_REC',
                 key: 'CD_STATUS_REC',
+                sorter: (a, b) => { return a.CD_STATUS_REC.localeCompare(b.CD_STATUS_REC)},
             }, {
                 title: 'Receipt Date',
                 dataIndex: 'DT_RCPT',
                 key: 'DT_RCPT',
                 render: (text) => moment(text).format("MMM Do YYYY"),
+                sorter: (a, b) => { return a.DT_RCPT.localeCompare(b.DT_RCPT)},
             }, {
                 title: 'Location',
                 dataIndex: 'CD_FLD_DSO_ALPHA',
                 key: 'CD_FLD_DSO_ALPHA',
+                sorter: (a, b) => { return a.CD_FLD_DSO_ALPHA.localeCompare(b.CD_FLD_DSO_ALPHA)},
             }, {
                 title: 'Type',
                 dataIndex: 'CD_HRNG_TYP',
                 key: 'CD_HRNG_TYP',
+                sorter: (a, b) => { return a.CD_HRNG_TYP.localeCompare(b.CD_HRNG_TYP)},
             }, {
                 title: 'Reason',
                 dataIndex: 'CD_RSN',
                 key: 'CD_RSN',
+                sorter: (a, b) => { return a.CD_RSN.localeCompare(b.CD_RSN)},
             }, {
                 title: 'Name',
                 key: 'Name',
@@ -45,14 +51,22 @@ class UnscheduledCases extends Component {
                         {`${record.PersonFirstName} ${record.PersonLastName}`}
                     </span>
                 ),
+                sorter: (a, b) => {
+                    const driverNameA = a.PersonFirstName + ' ' + a.PersonLastName;
+                    const driverNameB = b.PersonFirstName + ' ' + b.PersonLastName;
+
+                    return driverNameA.trim().localeCompare(driverNameB.trim());
+                },
             }, {
                 title: 'DL Number',
                 dataIndex: 'NBR_DL',
                 key: 'NBR_DL',
+                sorter: (a, b) => { return a.NBR_DL.localeCompare(b.NBR_DL)},
             }, {
                 title: 'Case',
                 dataIndex: 'CD_CASE',
                 key: 'CD_CASE',
+                sorter: (a, b) => { return a.CD_CASE.localeCompare(b.CD_CASE)},
             },
         ];
 
