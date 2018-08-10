@@ -36,7 +36,7 @@ const columns = [
         dataIndex: 'CaseNumber',
         width: 50,
         key: 'CaseNumber',
-        render: text => <a href="">{text}</a>,
+        // render: text => <a href="">{text}</a>,
     },
     {
         title: 'Status',
@@ -143,7 +143,10 @@ class CustomerDetails extends Component {
                                 height: "30px",
                                 backgroundColor: "white",
                                 border: "3px solid white"
-                            }} ><Icon type="idcard" /> <b>{customerDetailsObj.LastName},{customerDetailsObj.FirstName}</b></div>
+                            }} >
+                                <Icon type="idcard" />
+                                <b>{customerDetailsObj.LastName},{customerDetailsObj.FirstName}</b>
+                            </div>
                             <Row >
                                 <Col span={72}>
                                     <div style={{
@@ -232,7 +235,12 @@ class CustomerDetails extends Component {
                                     height: "30px",
                                     backgroundColor: "white",
                                     border: "3px solid white"
-                                }} ><span><b>CASES</b></span><span style={{ paddingLeft: "90%" }}><Button type="primary" onClick={() => this.handleNewCase()}>Add a Case</Button></span></div>
+                                }} >
+                                    <span><b>CASES</b></span>
+                                    <span style={{ paddingLeft: "90%" }}>
+                                        <Button type="primary" onClick={() => this.handleNewCase()}>Add a Case</Button>
+                                    </span>
+                                </div>
                                 <div style={{
                                     justify: "center",
                                     // width: "80%",
@@ -264,17 +272,18 @@ class CustomerDetails extends Component {
                                         })}
                                         columns={columns}
                                         dataSource={customerDetailsObj.cases}
-                                        rowKey={record => record.CaseNumber}
+                                        rowKey={record => record.CaseNumber + record.createdDate}
                                     />
                                     </div>
                                     }
                                 </div>
                             </Row>
-                            {this.state.modalvisible && <Modal title="Basic Modal"
+                            <Modal title="Basic Modal"
                                 visible={this.state.modalvisible}
                                 onOk={this.handleOk}
-                                onCancel={this.handleCancel}> Hi There! </Modal>
-                            }
+                                onCancel={this.handleCancel}> 
+                                Hi There! 
+                            </Modal>
                         </div>
                     ) : (
                             <div><span style={{ paddingLeft: "40%" }}> <Spin size="large" /> </span><span style={{ paddingLeft: "2%" }}><font size="large">Loading...</font></span></div>
