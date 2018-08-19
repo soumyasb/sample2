@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { ScrollPanel } from "primereact/components/scrollpanel/ScrollPanel"
-import { getCustomerDetails } from "../../../store/actions/caseActions";
+import { getCustomerDetails, getClosedCaseDetail } from "../../../store/actions/caseActions";
 import { withRouter } from "react-router-dom";
-import { Modal, List, Table, Button, Icon, Input, Row, Col, Spin } from 'antd';
+import { Modal, Popover, List, Table, Button, Icon, Input, Row, Col, Spin, Card } from 'antd';
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import "../../../Cases.css";
@@ -21,8 +21,7 @@ const frcolumns = [
         title: <b>ACCIDENT DATE</b>,
         dataIndex: 'Date',
         width: "35%",
-        key: 'Date',
-        render: text => <span style={{ paddingLeft: "2%" }}>{text}</span>
+        key: 'Date'
     },
     {
         title: <b>LOCATION</b>,
@@ -35,8 +34,7 @@ const columns = [
         title: 'Case Number',
         dataIndex: 'CaseNumber',
         width: 50,
-        key: 'CaseNumber',
-        // render: text => <a href="">{text}</a>,
+        key: 'CaseNumber'
     },
     {
         title: 'Status',
@@ -68,9 +66,9 @@ class CustomerDetails extends Component {
         super(props);
 
         this.state = {
-            dlNumber: props.match.params.dlNumber,
             customerDetailsObj: props.cases.customerDetailsObj,
-            modalvisible: false
+            closedCaseDetail: props.cases.closedCaseDetail
+            //  modalvisible: false
         };
         this.openModal = this.openModal.bind(this);
         this.handleOk = this.handleOk.bind(this);
@@ -78,8 +76,20 @@ class CustomerDetails extends Component {
     }
     componentDidMount() {
         debugger;
-        this.props.getCustomerDetails(this.state.dlNumber);
+        this.props.getCustomerDetails(this.props.match.params.dlNumber);
     }
+
+    static getDerivedStateFromProps(props, prevState) {
+        if (props.cases.customerDetailsObj &&
+            props.cases.customerDetailsObj !== prevState.customerDetailsObj) {
+            this.setState({ customerDetailsObj: props.cases.customerDetailsObj });
+        }
+        if (props.cases.closedCaseDetail &&
+            props.cases.closedCaseDetail !== prevState.closedCaseDetail) {
+            this.setState({ closedCaseDetail: props.cases.closedCaseDetail });
+        }
+    }
+
     handleNewCase() {
         const { customerDetailsObj } = this.state;
         this.props.history.push(
@@ -88,14 +98,7 @@ class CustomerDetails extends Component {
                 state: { detail: customerDetailsObj }
             })
     }
-    componentWillReceiveProps(nextProps) {
-        debugger;
-        if (this.props.cases.customerDetailsObj !== nextProps.cases.customerDetailsObj) {
-            if (nextProps.cases.customerDetailsObj !== undefined) {
-                this.setState({ customerDetailsObj: nextProps.cases.customerDetailsObj });
-            }
-        }
-    }
+
     isArchivedRow(record) {
         if (record.Archived) {
             return {
@@ -103,7 +106,7 @@ class CustomerDetails extends Component {
             }
         }
     }
-    openModal(record) {
+    openModal() {
         this.setState({ modalvisible: true });
     }
     handleOk = (e) => {
@@ -118,8 +121,12 @@ class CustomerDetails extends Component {
 
     render() {
         debugger;
+        const boxShadows = {
+            boxShadow:
+                "0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.14)"
+        };
+        const { customerDetailsObj, closedCaseDetail } = this.state;
 
-        const { customerDetailsObj } = this.state;
         return (
             <ScrollPanel
                 style={{
@@ -143,10 +150,7 @@ class CustomerDetails extends Component {
                                 height: "30px",
                                 backgroundColor: "white",
                                 border: "3px solid white"
-                            }} >
-                                <Icon type="idcard" />
-                                <b>{customerDetailsObj.LastName},{customerDetailsObj.FirstName}</b>
-                            </div>
+                            }} ><Icon type="idcard" /> <b>{customerDetailsObj.LastName},{customerDetailsObj.FirstName}</b></div>
                             <Row >
                                 <Col span={72}>
                                     <div style={{
@@ -178,7 +182,7 @@ class CustomerDetails extends Component {
                                             </Col>
                                             <Col span={6}>
                                                 <Row> <b>Address</b>:
-                                                    <TextArea rows="3" value={this.state.customerDetailsObj.MailingAddress} readOnly />
+                                                    <TextArea rows="3" value={customerDetailsObj.MailingAddress} readOnly />
                                                     {/* <Input value="AddressAddressAddress" disabled/>  */}
                                                 </Row></Col>
                                             <Col span={6}>
@@ -235,12 +239,7 @@ class CustomerDetails extends Component {
                                     height: "30px",
                                     backgroundColor: "white",
                                     border: "3px solid white"
-                                }} >
-                                    <span><b>CASES</b></span>
-                                    <span style={{ paddingLeft: "90%" }}>
-                                        <Button type="primary" onClick={() => this.handleNewCase()}>Add a Case</Button>
-                                    </span>
-                                </div>
+                                }} ><span><b>CASES</b></span><span style={{ paddingLeft: "90%" }}><Button type="primary" onClick={() => this.handleNewCase()}>Add a Case</Button></span></div>
                                 <div style={{
                                     justify: "center",
                                     // width: "80%",
@@ -260,30 +259,177 @@ class CustomerDetails extends Component {
                                             onClick: () => {
                                                 debugger;
                                                 //  if (record.CaseNumber) {
-                                                if (record.CaseStatusCode !== 'CL') {
-                                                    this.props.history.push(`/caseDetails/CaseNumber/${record.CaseNumber}`);
-                                                }
-                                                else {
-                                                    //this.props.history.push(`/closedCaseDetails/CaseNumber/${record.CaseNumber}`);
-                                                    this.openModal(record);
+                                                if (record.Archived === false) {
+                                                    if (record.CaseStatusCode !== 'CL') {
+                                                        this.props.history.push(`/caseDetails/CaseNumber/${record.CaseNumber}`);
+                                                    }
+                                                    else {
+                                                        // this.props.history.push(`/closedCaseDetails/CaseNumber/${record.CaseNumber}`);
+                                                        this.props.getClosedCaseDetail(record.CaseNumber);
+                                                        this.setState({ modalvisible: true });
+                                                    }
                                                 }
                                                 //  }                
+                                            },
+
+                                            onMouseEnter: () => {
+
                                             }
+
                                         })}
                                         columns={columns}
                                         dataSource={customerDetailsObj.cases}
-                                        rowKey={record => record.CaseNumber + record.createdDate}
+                                        rowKey={record => record.CaseNumber}
                                     />
+
                                     </div>
                                     }
                                 </div>
+                                <div><font color="red" size="small">*</font> <font size="small">The cases highlighted in red are archived.</font></div>
                             </Row>
-                            <Modal title="Basic Modal"
+                            {this.state.modalvisible && <Modal title={"Closed case detail"}
                                 visible={this.state.modalvisible}
                                 onOk={this.handleOk}
-                                onCancel={this.handleCancel}> 
-                                Hi There! 
-                            </Modal>
+                                onCancel={this.handleCancel}
+                                width={'70%'}>
+                                <div>
+                                    <Row>
+                                        <Col span={32}>
+                                            <div>
+                                                {/* <div style={{
+                                    textAlign: "center",
+                                    height: "30px",
+                                    width: "80%",
+                                    backgroundColor: "white",
+                                    paddingLeft: "1%"
+                                   }}> <b> CLOSED CASE DETAIL </b></div> */}
+                                                <Card
+                                                    style={{
+                                                        marginTop: "8px",
+                                                        borderRadius: "16px",
+                                                        //    width: "80%",
+                                                        ...boxShadows
+                                                    }}
+                                                >
+                                                    {closedCaseDetail &&
+                                                        <div> <div style={{
+                                                            justify: "center",
+                                                            height: "30px",
+                                                            backgroundColor: "#c9e3fa",
+                                                            paddingLeft: "1%"
+                                                        }} ><b>Subject Information</b></div>
+                                                            <div style={{
+                                                                justify: "center",
+                                                                height: "30px",
+                                                                paddingLeft: "1%"
+                                                            }}>
+                                                                <span style={{ paddingLeft: '0.5%' }}><b>DL # :</b> {closedCaseDetail.DlNumber}</span>
+                                                                <span style={{ paddingLeft: '5%' }}><b>Case # : </b>{closedCaseDetail.CaseNumber}</span>
+                                                                <span style={{ paddingLeft: '5%' }}><b>Name : </b>{closedCaseDetail.SubjectName}</span>
+                                                            </div>
+                                                        </div>}
+                                                </Card>
+                                                <Card
+                                                    style={{
+                                                        marginTop: "8px",
+                                                        borderRadius: "16px",
+                                                        // width: "80%",
+                                                        ...boxShadows
+                                                    }}
+                                                >
+                                                    {closedCaseDetail &&
+                                                        <div> <div style={{
+                                                            justify: "center",
+                                                            height: "30px",
+                                                            backgroundColor: "#c9e3fa",
+                                                            paddingLeft: "1%"
+                                                        }} ><b>DS124 Coding Strip</b></div>
+                                                            <div style={{
+                                                                justify: "center",
+                                                                height: "30px",
+                                                                paddingLeft: "1%"
+                                                            }}>  <span><b>Type : </b>{closedCaseDetail.Type}</span>
+                                                                <span style={{ paddingLeft: '5%' }}><b>Hearing Date: </b>{closedCaseDetail.HearingDate}</span>
+                                                                <span style={{ paddingLeft: '5%' }}><b>Location: </b>{closedCaseDetail.Location}</span>
+                                                                <span style={{ paddingLeft: '5%' }}><b>Reason: </b>{closedCaseDetail.Reason}</span>
+                                                                <span style={{ paddingLeft: '5%' }}><b>Sched Results: </b>{closedCaseDetail.ScheduledResults}</span>
+                                                                <span style={{ paddingLeft: '5%' }}><b>Type Action: </b>{closedCaseDetail.TypeAction}</span>
+                                                                <span style={{ paddingLeft: '5%' }}><b>Modified Date: </b>{closedCaseDetail.ModifiedDate}</span></div>
+                                                        </div>}
+                                                </Card>
+                                                <Card
+                                                    style={{
+                                                        marginTop: "8px",
+                                                        borderRadius: "16px",
+                                                        //   width: "80%",
+                                                        ...boxShadows
+                                                    }}
+                                                >
+                                                    {closedCaseDetail &&
+                                                        <div>
+                                                            <div style={{
+                                                                justify: "center",
+                                                                height: "30px",
+                                                                backgroundColor: "#c9e3fa",
+                                                                paddingLeft: "1%"
+                                                            }} >
+                                                                <b>Action Information </b>
+                                                            </div>
+                                                            <div style={{
+                                                                justify: "center",
+                                                                height: "60px",
+                                                                paddingLeft: "1%"
+                                                            }}>
+                                                                <div>
+                                                                    <span><b>Authority Section: </b>{closedCaseDetail.AuthoritySection1}</span>
+                                                                    <span style={{ paddingLeft: '5%' }}><b>Authority Section: </b>{closedCaseDetail.AuthoritySection2}</span>
+                                                                    <span style={{ paddingLeft: '5%' }}><b>Authority Section: </b>{closedCaseDetail.AuthoritySection3}</span>
+                                                                    <span style={{ paddingLeft: '5%' }}><b>Effective Date: </b>{closedCaseDetail.EffectiveDate}</span>
+                                                                    <span style={{ paddingLeft: '5%' }}><b>Through Date: </b>{closedCaseDetail.ThroughDate}</span>
+                                                                </div>
+
+                                                                <div>
+                                                                    <span><b>Action Term Date : </b>{closedCaseDetail.ActionTermDate}</span>
+                                                                    <span style={{ paddingLeft: '5%' }}><b>Mail Date: </b>{closedCaseDetail.MailDate}</span>
+                                                                    <span style={{ paddingLeft: '5%' }}><b>Original Authority Section: </b>{closedCaseDetail.OriginalAuthoritySection}</span>
+                                                                    <span style={{ paddingLeft: '5%' }}><b>Original Effective Date: </b>{closedCaseDetail.OriginalEffectiveDate}</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>}
+                                                </Card>
+                                                <Card
+                                                    style={{
+                                                        marginTop: "8px",
+                                                        borderRadius: "16px",
+                                                        //    width: "80%",
+                                                        ...boxShadows
+                                                    }}
+                                                >
+                                                    {closedCaseDetail &&
+                                                        <div> <div style={{
+                                                            justify: "center",
+                                                            height: "30px",
+                                                            backgroundColor: "#c9e3fa",
+                                                            paddingLeft: "1%"
+                                                        }} > <b>Case Closure Information </b></div>
+                                                            <div style={{
+                                                                justify: "center",
+                                                                height: "60px",
+                                                                paddingLeft: "1%"
+                                                            }}><div> <span><b>Scheduled To: </b>{closedCaseDetail.ScheduledTo}</span>
+                                                                    <span style={{ paddingLeft: '5%' }}><b>Date Updated: </b>{closedCaseDetail.DateUpdated}</span>
+                                                                    <span style={{ paddingLeft: '5%' }}><b>Updated By: </b>{closedCaseDetail.UpdatedBy}</span></div>
+                                                                <div> <span style={{ paddingLeft: '25%' }}><b>Date Closed: </b>{closedCaseDetail.DateClosed}</span>
+                                                                    <span style={{ paddingLeft: '5%' }}><b>Closed By: </b>{closedCaseDetail.ClosedBy}</span>
+                                                                </div></div>
+                                                        </div>}
+                                                </Card>
+                                                {/* <div><Button type="primary" style={{marginLeft: "36%", marginTop: "1%"}} size={"small"} onClick={(e) => this.onButtonClick(e,'Back')}>Go Back</Button></div> */}
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </div> </Modal>
+                            }
                         </div>
                     ) : (
                             <div><span style={{ paddingLeft: "40%" }}> <Spin size="large" /> </span><span style={{ paddingLeft: "2%" }}><font size="large">Loading...</font></span></div>
@@ -306,7 +452,7 @@ const mapDispatchToProps = dispatch => {
     return bindActionCreators(
         {
             getCustomerDetails,
-            showModal
+            getClosedCaseDetail
 
         },
         dispatch
@@ -314,3 +460,4 @@ const mapDispatchToProps = dispatch => {
 };
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(CustomerDetails));
+
