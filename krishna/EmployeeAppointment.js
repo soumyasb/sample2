@@ -135,7 +135,9 @@ class EmployeeAppointment extends Component {
             modalVisible: false,
             modalTitle: 'New Appointment',
             newAppointmentObj: {},
-            recurringObj: []
+            recurringObj: [],
+            timeOffSelectedMonth: moment(),
+            recurringSelectedMonth: moment(),
         };
 
         this.handleMonthChange = this.handleMonthChange.bind(this);
@@ -149,24 +151,14 @@ class EmployeeAppointment extends Component {
 
     componentDidMount() {
         this.props.getListOfEmployeesForOffice();
-
-        // const dateString = moment().format(monthFormat);
-        // const [month, year] = dateString.split('-');
-        // debugger
-        // this.props.getTimeOffDetailsforEmployee(13, month, year);
     }
 
     static getDerivedStateFromProps(props, prevState) {
         const { employeeList, employeeappmnt } = props.profiles;
 
-        if (employeeList !== prevState.employeeList) {
-            return { employeeList };
-        }
+        if (employeeList !== prevState.employeeList) return { employeeList };
 
-        if (employeeappmnt !== prevState.employeeappmnt) {
-            debugger
-            return { employeeappmnt };
-        }
+        if (employeeappmnt !== prevState.employeeappmnt) return { employeeappmnt };
 
         return null;
     }
@@ -174,12 +166,22 @@ class EmployeeAppointment extends Component {
     onEmpListRowClick(value) {
         const selectedEmp = this.state.employeeList.find(emp => emp.empid === parseInt(value));
         this.setState({ selectedEmp });
+
+        const dateString = moment().format(monthFormat);
+        const [month, year] = dateString.split('-');
+
+        this.props.getTimeOffDetailsforEmployee(value, month, year);
+        // TODO...
+        // If you have anyother call for recurring you need to call here so that the recurring data is also populated when the user selects an employee...
     }
 
-    handleMonthChange(date, dateString) {
+    handleMonthChange(date, dateString, isRecurring = false) {
         if (dateString) {
             const [month, year] = dateString.split('-');
-            this.props.getTimeOffDetailsforEmployee(13, month, year);
+            this.props.getTimeOffDetailsforEmployee(this.state.selectedEmp.empid, month, year);
+
+            if (isRecurring) this.setState({ recurringSelectedMonth: date });
+            else this.setState({ timeOffSelectedMonth: date });
         }
     }
 
@@ -191,10 +193,15 @@ class EmployeeAppointment extends Component {
         this.props.getTimeOffCreateScreen();
         let modalTitle = 'New Appointment';
 
+        let newAppointmentObj = {}, recurringObj = {};
+
         switch (actype) {
             case 'new':
                 if (isRecurring) modalTitle = 'New Recurring Appointment';
                 else modalTitle = 'New Appointment';
+
+                newAppointmentObj = {};
+                recurringObj = {};
                 break;
             case 'edit':
                 if (isRecurring) modalTitle = 'Update Recurring Appointment';
@@ -208,7 +215,7 @@ class EmployeeAppointment extends Component {
                 break;
         }
 
-        this.setState({ modalTitle, modalVisible: true });
+        this.setState({ modalTitle, modalVisible: true, newAppointmentObj, recurringObj });
     }
 
     handleOk() {
@@ -223,9 +230,11 @@ class EmployeeAppointment extends Component {
                 newAppointmentObj.activityType = e;
                 break;
             case 'date':
-                newAppointmentObj.date = e;
-                newAppointmentObj.startTime = e;
-                newAppointmentObj.endTime = e;
+                const date = e.startOf('date');
+
+                newAppointmentObj.date = date;
+                newAppointmentObj.startTime = date;
+                newAppointmentObj.endTime = date;
                 break;
             case 'isAllDay':
                 newAppointmentObj.isAllDay = e.target.checked;
@@ -258,9 +267,11 @@ class EmployeeAppointment extends Component {
                 recurringObj.activityType = e;
                 break;
             case 'date':
-                recurringObj.date = e;
-                recurringObj.startTime = e;
-                recurringObj.endTime = e;
+                const date = e.startOf('date');
+
+                recurringObj.date = date;
+                recurringObj.startTime = date;
+                recurringObj.endTime = date;
                 break;
             case 'occuranceType':
                 recurringObj.occuranceType = e.target.value;
@@ -289,7 +300,7 @@ class EmployeeAppointment extends Component {
     }
 
     render() {
-        const { selectedEmp, newAppointmentObj, recurringObj } = this.state;
+        const { selectedEmp, newAppointmentObj, recurringObj, timeOffSelectedMonth, recurringSelectedMonth } = this.state;
         const { createTimeOffData } = this.props.profiles;
         const activityTypeList = createTimeOffData ?
             createTimeOffData.activityTypeList
@@ -404,37 +415,37 @@ class EmployeeAppointment extends Component {
                                                     label="Date"
                                                     {...formItemLayout}
                                                 >
-                                                    <DatePicker onChange={e => this.handleTimeOffFieldChange(e, 'date')} />
+                                                    <DatePicker value={newAppointmentObj.date} onChange={e => this.handleTimeOffFieldChange(e, 'date')} />
                                                 </FormItem>
                                                 <FormItem
                                                     label="Is All Day"
                                                     {...formItemLayout}
                                                 >
-                                                    <Checkbox onChange={e => this.handleTimeOffFieldChange(e, 'isAllDay')} />
+                                                    <Checkbox checked={newAppointmentObj.isAllDay} onChange={e => this.handleTimeOffFieldChange(e, 'isAllDay')} />
                                                 </FormItem>
                                                 <FormItem
                                                     label="Start Time"
                                                     {...formItemLayout}
                                                 >
-                                                    <TimePicker disabled={newAppointmentObj.disableTime} format={timeFormat} onChange={e => this.handleTimeOffFieldChange(e, 'startTime')} />
+                                                    <TimePicker disabled={newAppointmentObj.disableTime} value={newAppointmentObj.startTime} format={timeFormat} onChange={e => this.handleTimeOffFieldChange(e, 'startTime')} />
                                                 </FormItem>
                                                 <FormItem
                                                     label="End Time"
                                                     {...formItemLayout}
                                                 >
-                                                    <TimePicker disabled={newAppointmentObj.disableTime} format={timeFormat} onChange={e => this.handleTimeOffFieldChange(e, 'endTime')} />
+                                                    <TimePicker disabled={newAppointmentObj.disableTime} value={newAppointmentObj.endTime} format={timeFormat} onChange={e => this.handleTimeOffFieldChange(e, 'endTime')} />
                                                 </FormItem>
                                                 <FormItem
                                                     label="Comment"
                                                     {...formItemLayout}
                                                 >
-                                                    <TextArea rows="3" onChange={e => this.handleTimeOffFieldChange(e, 'comment')} />
+                                                    <TextArea rows="3" value={newAppointmentObj.comment} onChange={e => this.handleTimeOffFieldChange(e, 'comment')} />
                                                 </FormItem>
                                                 <FormItem
                                                     label="Display on Schedule"
                                                     {...formItemLayout}
                                                 >
-                                                    <Checkbox onChange={e => this.handleTimeOffFieldChange(e, 'isDispayComment')} />
+                                                    <Checkbox checked={newAppointmentObj.isDispayComment} onChange={e => this.handleTimeOffFieldChange(e, 'isDispayComment')} />
                                                 </FormItem>
                                             </Form>
 
@@ -445,7 +456,7 @@ class EmployeeAppointment extends Component {
                                 <div>
                                     <div>
                                         Pick Month-Year:
-                                        <MonthPicker format={monthFormat} onChange={this.handleMonthChange} />
+                                        <MonthPicker format={monthFormat} value={timeOffSelectedMonth} onChange={(date, dateString) => this.handleMonthChange(date, dateString)} />
                                         <br /><br />
                                     </div>
                                     {this.state.employeeappmnt ? <Table
@@ -546,7 +557,7 @@ class EmployeeAppointment extends Component {
                                                     label="Date"
                                                     {...formItemLayout}
                                                 >
-                                                    <DatePicker onChange={e => this.handleRecurringFieldChange(e, 'date')} />
+                                                    <DatePicker value={recurringObj.date} onChange={e => this.handleRecurringFieldChange(e, 'date')} />
                                                 </FormItem>
                                                 <FormItem
                                                     label="Is All Day"
@@ -587,7 +598,7 @@ class EmployeeAppointment extends Component {
                                 <div>
                                     <div>
                                         Pick Month-Year:
-                                        <MonthPicker format={monthFormat} onChange={this.handleMonthChange} />
+                                        <MonthPicker format={monthFormat} value={recurringSelectedMonth} onChange={(date, dateString) => this.handleMonthChange(date, dateString, true)} />
                                         <br /><br />
                                     </div>
                                     {this.state.employeeappmnt ? <Table
