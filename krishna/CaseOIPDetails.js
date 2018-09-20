@@ -84,7 +84,7 @@ class CaseOIPDetails extends Component {
 
         this.state = {
             allOIPsforaCaseNumber: allOIPsforaCaseNumberData,
-            oiplookupresults: OIPLookResultsData,
+            oiplookupresults: [],
             oipItemObj: allOIPsforaCaseNumberData[0],
             disableNewButton: false,
             displayViewList: true,
@@ -378,7 +378,8 @@ class CaseOIPDetails extends Component {
     }
 
     handleLookupReset() {
-        this.setState({ oipLookupItemObj: newLookupObj });
+        const oipLookupItemObj = { ...newLookupObj };
+        this.setState({ oipLookupItemObj, oiplookupresults: [] });
     }
 
     handleLookupSearch() {
