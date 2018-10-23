@@ -1,0 +1,2023 @@
+{
+  "RequestorCode": "86301",
+  "Operator": "MPG",
+  "NetName": "#ADMV6LI",
+  "LoginId": "MWMPG4  ",
+  "DLNumber": "I0000000",
+  "ThreeCharacterName": "VIN",
+  "Birthdate": "06-27-1978",
+  "DSUserFieldOffice": "SAC",
+  "PASType": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "BAC",
+      "Value": "A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Refusal",
+      "Value": "R"
+    }
+  ],
+  "PASTestType": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Blood",
+      "Value": "BL"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Breath",
+      "Value": "BR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Refusal",
+      "Value": "RE"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Urine",
+      "Value": "UR"
+    }
+  ],
+  "UpdateCopies": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "System Generated Order",
+      "Value": " "
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Update Only - No Order",
+      "Value": "0"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Manually Typed order",
+      "Value": "9"
+    }
+  ],
+  "VOPType": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "BAC",
+      "Value": "A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Refusal",
+      "Value": "R"
+    }
+  ],
+  "VOPTestType": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Blood",
+      "Value": "BL"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Breath",
+      "Value": "BR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "PAS",
+      "Value": "PA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Refusal",
+      "Value": "RE"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Urine",
+      "Value": "UR"
+    }
+  ],
+  "CommStatusIndicator": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Offense occurred in a commercial vehicle.                                                           ",
+      "Value": "C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Driver was commercially licensed.                                                                   ",
+      "Value": "D"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Driver was transporting hazardous materials.                                                        ",
+      "Value": "H"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "No commercial indicator.                                                                            ",
+      "Value": "N"
+    }
+  ],
+  "OSCode": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Military in Americas",
+      "Value": "AA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Alberta",
+      "Value": "AB"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Military in Eurpoe, Canada",
+      "Value": "AE"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Alaska",
+      "Value": "AK"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Alabama",
+      "Value": "AL"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Military in Pacific",
+      "Value": "AP"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Arkansas",
+      "Value": "AR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "American Samoa",
+      "Value": "AS"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Arizona",
+      "Value": "AZ"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "British Columbia",
+      "Value": "BC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "California",
+      "Value": "CA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Colorado",
+      "Value": "CO"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Connecticut",
+      "Value": "CT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Canal Zone",
+      "Value": "CZ"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "District of Columbia",
+      "Value": "DC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Delaware",
+      "Value": "DE"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Florida",
+      "Value": "FL"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Provisional Dist. of Franklin",
+      "Value": "FR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Georgia",
+      "Value": "GA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Foreign Military",
+      "Value": "GI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Guam",
+      "Value": "GU"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Hawaii",
+      "Value": "HI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Hilo, Hawaii",
+      "Value": "HI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Kauai, Hawaii",
+      "Value": "HI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Maui, Hawaii",
+      "Value": "HI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Iowa",
+      "Value": "IA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Idaho",
+      "Value": "ID"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Illinois",
+      "Value": "IL"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Indiana",
+      "Value": "IN"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Provisional Dist. of Keewatin",
+      "Value": "KE"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Kansas",
+      "Value": "KS"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Kentucky",
+      "Value": "KY"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Louisiana",
+      "Value": "LA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Massachusetts",
+      "Value": "MA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Manitoba",
+      "Value": "MB"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Maryland",
+      "Value": "MD"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Maine",
+      "Value": "ME"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Michigan",
+      "Value": "MI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Provisional Dist. of MacKenzie",
+      "Value": "MK"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Minnesota",
+      "Value": "MN"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Missouri",
+      "Value": "MO"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Mississippi",
+      "Value": "MS"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Montana",
+      "Value": "MT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Mexico",
+      "Value": "MX"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "New Brunswick",
+      "Value": "NB"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "North Carolina",
+      "Value": "NC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "North Dakota",
+      "Value": "ND"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Nebraska",
+      "Value": "NE"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Newfoundland",
+      "Value": "NF"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "New Hampshire",
+      "Value": "NH"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "New Jersey",
+      "Value": "NJ"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "New Mexico",
+      "Value": "NM"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Nova Scotia",
+      "Value": "NS"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Nevada",
+      "Value": "NV"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "New York",
+      "Value": "NY"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Ohio",
+      "Value": "OH"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Oklahoma",
+      "Value": "OK"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Ontario",
+      "Value": "ON"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Oregon",
+      "Value": "OR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Other Foreign Country",
+      "Value": "OT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Pennsylvania",
+      "Value": "PA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Prince Edward Island",
+      "Value": "PE"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Puerto Rico",
+      "Value": "PR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Quebec",
+      "Value": "QU"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Rhode Island",
+      "Value": "RI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Saskatchewan",
+      "Value": "SA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "South Carolina",
+      "Value": "SC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "South Dakota",
+      "Value": "SD"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Tennessee",
+      "Value": "TN"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Texas",
+      "Value": "TX"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Utah",
+      "Value": "UT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Virginia",
+      "Value": "VA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Virgin Islands",
+      "Value": "VI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Vermont",
+      "Value": "VT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Washington",
+      "Value": "WA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Wisconsin",
+      "Value": "WI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "West Virginia",
+      "Value": "WV"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Wyoming",
+      "Value": "WY"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Yukon Territory",
+      "Value": "YU"
+    }
+  ],
+  "PASOriginalAuthoritySection": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Refusal                                           ",
+      "Value": "133531  "
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Does not meet requirement for hardship license    ",
+      "Value": "133538C "
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": ".01 or greater                                    ",
+      "Value": "23137   "
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": ".01 or greater (SB1186)                           ",
+      "Value": "13388   "
+    }
+  ],
+  "VOPOriginalAuthoritySection": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DUI Probation Violation Refusal                   ",
+      "Value": "133531  "
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "APS .01 or more while on DUI Probation            ",
+      "Value": "133532A "
+    }
+  ],
+  "EndStay": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Stay      ",
+      "Value": "5 "
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DMVR Stay ",
+      "Value": "51"
+    }
+  ],
+  "HearingResults": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Dept. Review complete",
+      "Value": "0"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DNA, did not appear, notice returned unclaimed",
+      "Value": "1"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DNA, did not appear, notice not returned unclained",
+      "Value": "2"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Subject appeared",
+      "Value": "3"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Subject appeared, waived formal notice of hearing",
+      "Value": "4"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Subject appeared, report received, incomplete",
+      "Value": "5"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Hearing cancelled at request of subject (13353B)",
+      "Value": "7"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Hearing cancelled by the Department",
+      "Value": "8"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Another appeared on behalf of subject",
+      "Value": "9"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "No contact",
+      "Value": "N"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Hearing transferred to different Driver Safety District Office",
+      "Value": "T"
+    }
+  ],
+  "ChgHearingType": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Hearing                            ",
+      "Value": "4"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Telephone Hearing                  ",
+      "Value": "7"
+    }
+  ],
+  "CoFo": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Recreate New Automated Order                                ",
+      "Value": "5"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Recreate Order for Remail                                   ",
+      "Value": "6"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Amend Type Action 14 to 13                                  ",
+      "Value": "7"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "To Remail an APS action to another address (Not the Latest) ",
+      "Value": "8"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Amended Order (Susp/Rev/Ref/Canc/Restr/Prob)                ",
+      "Value": "A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Cor Order (Susp/Rev/Ref/Canc/Restr/Prob)                    ",
+      "Value": "B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "File Only NBA (No Better Address) or Deceased               ",
+      "Value": "C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "File Only-Amended Order (Susp/Rev/Ref/Canc/Restr/Prob)      ",
+      "Value": "D"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "File Only-Cor Order (Susp/Rev/Ref/Canc/Restr/Prob)          ",
+      "Value": "E"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Amended Order (Reinstatement)                               ",
+      "Value": "F"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Amended Order (Term/Set Aside)                              ",
+      "Value": "L"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "File Only-Subj Deceased                                     ",
+      "Value": "M"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Cor Order (Term/Set Aside)                                  ",
+      "Value": "R"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Cor Order (Reinstatement)                                   ",
+      "Value": "U"
+    }
+  ],
+  "LicenseLocation": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "License lost                                                ",
+      "Value": "60"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "License destroyed/Surrendered by subject                    ",
+      "Value": "75"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "License destroyed/Mutilated                                 ",
+      "Value": "76"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Issuance of license withheld/Surrendered by subject         ",
+      "Value": "X5"
+    }
+  ],
+  "DSFieldOffices": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "ABC",
+      "Value": "ABC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "FFF",
+      "Value": "FFF"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "aaa",
+      "Value": "aaa"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DDD",
+      "Value": "DDD"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DSA",
+      "Value": "DSA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SDO",
+      "Value": "SDO"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "MAU",
+      "Value": "MAU"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "APU",
+      "Value": "APU"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "COV",
+      "Value": "COV"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "BAK",
+      "Value": "BAK"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "RDG",
+      "Value": "RDG"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SKN",
+      "Value": "SKN"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "CRG",
+      "Value": "CRG"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "OXN",
+      "Value": "OXN"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DSH",
+      "Value": "DSH"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "NRG",
+      "Value": "NRG"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "IRG",
+      "Value": "IRG"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SAC",
+      "Value": "SAC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "FSO",
+      "Value": "FSO"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SRG",
+      "Value": "SRG"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DSP",
+      "Value": "DSP"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "OAK",
+      "Value": "OAK"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SNF",
+      "Value": "SNF"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SNJ",
+      "Value": "SNJ"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "ESG",
+      "Value": "ESG"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "VNY",
+      "Value": "VNY"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "LSA",
+      "Value": "LSA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "LGB",
+      "Value": "LGB"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "IRV",
+      "Value": "IRV"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SND",
+      "Value": "SND"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SNB",
+      "Value": "SNB"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "CCM",
+      "Value": "CCM"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "ING",
+      "Value": "ING"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "OXN",
+      "Value": "OXN"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "APL",
+      "Value": "APL"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "CHF",
+      "Value": "CHF"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "ACT",
+      "Value": "ACT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "LIT",
+      "Value": "LIT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DSS",
+      "Value": "DSS"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "TSS",
+      "Value": "TSS"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "TRK",
+      "Value": "TRK"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "VNY",
+      "Value": "VNY"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SKN",
+      "Value": "SKN"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "MVW",
+      "Value": "MVW"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SDC",
+      "Value": "SDC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "CHI",
+      "Value": "CHI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "JCK",
+      "Value": "JCK"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "ORO",
+      "Value": "ORO"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "CNC",
+      "Value": "CNC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "CSC",
+      "Value": "CSC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "PLC",
+      "Value": "PLC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "ERK",
+      "Value": "ERK"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "ELC",
+      "Value": "ELC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "BAK",
+      "Value": "BAK"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "LKP",
+      "Value": "LKP"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SUS",
+      "Value": "SUS"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "POM",
+      "Value": "POM"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "CTM",
+      "Value": "CTM"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "UKI",
+      "Value": "UKI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "ALT",
+      "Value": "ALT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SLT",
+      "Value": "SLT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SAL",
+      "Value": "SAL"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "NPA",
+      "Value": "NPA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "GRV",
+      "Value": "GRV"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "QCY",
+      "Value": "QCY"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "HOL",
+      "Value": "HOL"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SLO",
+      "Value": "SLO"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "RCY",
+      "Value": "RCY"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "STB",
+      "Value": "STB"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "CAP",
+      "Value": "CAP"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "RDG",
+      "Value": "RDG"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "YKA",
+      "Value": "YKA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "VLO",
+      "Value": "VLO"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "STR",
+      "Value": "STR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "ECR",
+      "Value": "ECR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "MOD",
+      "Value": "MOD"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "RDB",
+      "Value": "RDB"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "VSL",
+      "Value": "VSL"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "VEN",
+      "Value": "VEN"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "WDL",
+      "Value": "WDL"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "YCY",
+      "Value": "YCY"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "STM",
+      "Value": "STM"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "COL",
+      "Value": "COL"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SEA",
+      "Value": "SEA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SNA",
+      "Value": "SNA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SNR",
+      "Value": "SNR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "AUB",
+      "Value": "AUB"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "WLW",
+      "Value": "WLW"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "PRO",
+      "Value": "PRO"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "RID",
+      "Value": "RID"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "HWD",
+      "Value": "HWD"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "COM",
+      "Value": "COM"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "WTS",
+      "Value": "WTS"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "BSH",
+      "Value": "BSH"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "LOM",
+      "Value": "LOM"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "FTB",
+      "Value": "FTB"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "WHT",
+      "Value": "WHT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "PIT",
+      "Value": "PIT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SNM",
+      "Value": "SNM"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "LAN",
+      "Value": "LAN"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "OCN",
+      "Value": "OCN"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DAV",
+      "Value": "DAV"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DYC",
+      "Value": "DYC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "PAR",
+      "Value": "PAR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "WSC",
+      "Value": "WSC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "FRF",
+      "Value": "FRF"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "GIL",
+      "Value": "GIL"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "WCR",
+      "Value": "WCR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "PLE",
+      "Value": "PLE"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "STC",
+      "Value": "STC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "PET",
+      "Value": "PET"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "HEM",
+      "Value": "HEM"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "MTS",
+      "Value": "MTS"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "FRM",
+      "Value": "FRM"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "FRE",
+      "Value": "FRE"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "KGC",
+      "Value": "KGC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "CAM",
+      "Value": "CAM"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "FOM",
+      "Value": "FOM"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "PLS",
+      "Value": "PLS"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "STT",
+      "Value": "STT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "ECA",
+      "Value": "ECA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "GOL",
+      "Value": "GOL"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "ROC",
+      "Value": "ROC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "NHY",
+      "Value": "NHY"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "POW",
+      "Value": "POW"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SNY",
+      "Value": "SNY"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SWB",
+      "Value": "SWB"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SIV",
+      "Value": "SIV"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "NOV",
+      "Value": "NOV"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "so",
+      "Value": "so"
+    }
+  ],
+  "AuthSection": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Refusal                                           ",
+      "Value": "133531  "
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Does not meet requirement for hardship license    ",
+      "Value": "133538C "
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": ".01 or greater                                    ",
+      "Value": "23137   "
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": ".01 or greater (SB1186)                           ",
+      "Value": "13388   "
+    }
+  ]
+}
