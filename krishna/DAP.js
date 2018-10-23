@@ -19,7 +19,7 @@ const defaultDAPObj = {
     APSType: '',
     arrestDate: null,
     APSTestType: '',
-    UpdateCopies: '',
+    UpdateCopies: '9',
     VOPType: '',
     VOPTestType: '',
     lawEnforcementAgency: '',
@@ -85,6 +85,7 @@ class DAP extends Component {
         this.handleFieldChange = this.handleFieldChange.bind(this);
         this.onDateChange = this.onDateChange.bind(this);
         this.handleModalClose = this.handleModalClose.bind(this);
+        this.handleUpdate = this.handleUpdate.bind(this);
     }
 
     handleFieldChange(e, type) {
@@ -118,7 +119,6 @@ class DAP extends Component {
                     }
                 }
                 break;
-            case 'courtCode':
             case 'APSTestType':
             case 'UpdateCopies':
             case 'VOPTestType':
@@ -138,6 +138,7 @@ class DAP extends Component {
             case 'ThreeCharacterName':
             case 'outOfStateCd':
             case 'nextDLNumber':
+            case 'courtCode':
                 dapObj[type] = e.target.value;
                 break;
             case 'outOfStateDLNo':
@@ -159,7 +160,13 @@ class DAP extends Component {
     }
 
     onDateChange(d, ds, type) {
-        debugger
+        if (type === 'arrestDate') {
+            if (!moment(ds).isSameOrBefore(moment().format('YYYY-MM-DD'), 'day')) {
+                this.setState({ errorMessage: 'Arrest Date cannot be in the future', errorModalShow: true });
+                return;
+            }
+        }
+
         const { dapObj } = this.state;
         dapObj[type] = ds || moment(new Date());
 
@@ -168,6 +175,59 @@ class DAP extends Component {
 
     handleModalClose() {
         this.setState({ errorModalShow: false, errorMessage: '' });
+    }
+
+    validateDAP() {
+        let isInValid = false;
+        let errorMessage = '';
+        const { dapObj } = this.state;
+
+        if (!dapObj.Birthdate) {
+            errorMessage += 'Birth Date is required.\n';
+            isInValid = true;
+        }
+        if (!dapObj.APSType) {
+            errorMessage += 'APS Type is required.\n';
+            isInValid = true;
+        }
+        if (!dapObj.APSTestType) {
+            errorMessage += 'APS Test Type is required.\n';
+            isInValid = true;
+        }
+        if (!dapObj.VOPType) {
+            errorMessage += 'VOP Type is required.\n';
+            isInValid = true;
+        }
+        if (!dapObj.VOPTestType) {
+            errorMessage += 'VOP Test Type is required.\n';
+            isInValid = true;
+        }
+        if (!dapObj.lawEnforcementAgency) {
+            errorMessage += 'Law Enforcement Agency is required.\n';
+            isInValid = true;
+        }
+        if (!dapObj.courtCode) {
+            errorMessage += 'Court Code is required.\n';
+            isInValid = true;
+        } else {
+            if (dapObj.courtCode.length !== 5) {
+                errorMessage += 'Court code must be 5 digits.\n';
+                isInValid = true;
+            }
+        }
+        debugger
+        if (isInValid) {
+            this.setState({ errorMessage, errorModalShow: true });
+            return false;
+        }
+        return true;
+    }
+
+    handleUpdate() {
+        debugger
+        if (this.validateDAP()) {
+            //TODO update code here....
+        }
     }
 
     render() {
@@ -207,25 +267,25 @@ class DAP extends Component {
                                 </Col>
                                 <Col span={1} />
                                 <Col span={6}>
-                                    <b>Birth Date </b>: <br /><DatePicker placeholder="Birth Date"
+                                    <b>Birth Date <font color="red">*</font></b> :<br /><DatePicker placeholder="Birth Date"
                                         value={moment(new Date(Birthdate))} onChange={(d, ds) => { this.onDateChange(d, ds, 'Birthdate') }} />
                                 </Col>
                             </Row>
                             <br />
                             <Row>
                                 <Col span={5} style={{ border: '0.5px dotted grey', borderRadius: '5px', padding: '10px' }}>
-                                    <b>APS Type</b>: <br /><RadioGroup value={APSType} onChange={(e) => this.handleFieldChange(e, 'APSType')}>
+                                    <b>APS Type <font color="red">*</font></b> : <br /><RadioGroup value={APSType} onChange={(e) => this.handleFieldChange(e, 'APSType')}>
                                         {DAPInitData.APSType.map((item) => <Radio key={`apsType-${item.Value}`} value={item.Value}>{item.Text}</Radio>)}
                                     </RadioGroup>
                                 </Col>
                                 <Col span={1} />
                                 <Col span={5}>
-                                    <b>Arrest / Det Date </b>: <br /><DatePicker placeholder="Arrest Date"
+                                    <b>Arrest / Det Date <font color="red">*</font></b> : <br /><DatePicker placeholder="Arrest Date"
                                         value={moment(new Date(arrestDate || Date.now()))} onChange={(d, ds) => { this.onDateChange(d, ds, 'arrestDate') }} />
                                 </Col>
                                 <Col span={1} />
                                 <Col span={5}>
-                                    <b>APS Type of Test</b>: <Select onChange={e => this.handleFieldChange(e, 'APSTestType')} value={APSTestType}
+                                    <b>APS Type of Test <font color="red">*</font></b> : <Select onChange={e => this.handleFieldChange(e, 'APSTestType')} value={APSTestType}
                                         showArrow={true} size={"default"} style={{ width: '100%' }} disabled={APSType === 'R'}>
                                         {getDropdownList(DAPInitData.APSTestType)}
                                     </Select>
@@ -234,21 +294,23 @@ class DAP extends Component {
                                 <Col span={5}>
                                     <b>Update Copies</b>: <Select onChange={e => this.handleFieldChange(e, 'UpdateCopies')} value={UpdateCopies}
                                         showArrow={true} size={"default"} style={{ width: '100%' }}>
-                                        {getDropdownList(DAPInitData.UpdateCopies)}
+                                        {DAPInitData.UpdateCopies.map(item =>
+                                            <Option key={item.Value} value={item.Value}>{item.Value.trim() ? `${item.Value} - ` : ''}{item.Text}</Option>
+                                        )}
                                     </Select>
                                 </Col>
                             </Row>
                             <br />
                             <Row>
                                 <Col span={5} style={{ border: '0.5px dotted grey', borderRadius: '5px', padding: '10px' }}>
-                                    <b>VOP Type</b>: <br /><RadioGroup value={VOPType} onChange={e => this.handleFieldChange(e, 'VOPType')}>
+                                    <b>VOP Type <font color="red">*</font></b> : <br /><RadioGroup value={VOPType} onChange={e => this.handleFieldChange(e, 'VOPType')}>
                                         {DAPInitData.VOPType.map((item) => <Radio value={item.Value}>{item.Text}</Radio>)}
                                     </RadioGroup>
                                 </Col>
                                 <Col span={7} />
                                 <Col span={5}>
                                     {VOPType !== 'N' && <div>
-                                        <b>VOP Type of Test</b>: <Select onChange={e => this.handleFieldChange(e, 'VOPTestType')} value={VOPTestType}
+                                        <b>VOP Type of Test  <font color="red">*</font></b> : <Select onChange={e => this.handleFieldChange(e, 'VOPTestType')} value={VOPTestType}
                                             showArrow={true} size={"default"} style={{ width: '100%' }} disabled={VOPType === 'R'}>
                                             {getDropdownList(DAPInitData.VOPTestType)}
                                         </Select>
@@ -265,12 +327,12 @@ class DAP extends Component {
                                 </Row>
                                 <Row>
                                     <Col span={8}>
-                                        <b>LE Agency </b>: <Input placeholder="LE Agency" value={lawEnforcementAgency}
+                                        <b>LE Agency <font color="red">*</font></b> : <Input placeholder="LE Agency" value={lawEnforcementAgency}
                                             onChange={e => this.handleFieldChange(e, 'lawEnforcementAgency')} />
                                     </Col>
                                     <Col span={1} />
                                     <Col span={5}>
-                                        <b>Court # </b>: <Input placeholder="Court #" value={courtCode}
+                                        <b>Court # <font color="red">*</font></b> : <Input placeholder="Court #" value={courtCode}
                                             onChange={e => this.handleFieldChange(e, 'courtCode')} />
                                     </Col>
                                     <Col span={1} />
@@ -499,7 +561,7 @@ class DAP extends Component {
                                     <Button style={{ backgroundColor: 'green', color: 'white' }} onClick={() => { }}> + New DL </Button>
                                 </Col>
                                 <Col style={{ float: 'right' }}>
-                                    <Button type="primary" onClick={() => { }}> Update </Button> {' '}
+                                    <Button type="primary" onClick={this.handleUpdate}> Update </Button> {' '}
                                     <Button type="danger" onClick={() => { }}> Cancel </Button>
                                 </Col>
                             </Row>
