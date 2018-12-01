@@ -12,6 +12,15 @@ import Languages from './Languages';
 
 const { Content, Sider } = Layout;
 
+const RENDER_BY_TYPE = {
+    Employees: < Employees />,
+    ActivityType: <ActivityType />,
+    CaseClosure: <CaseClosure />,
+    DefaultHearingTime: <DefaultHearingTime />,
+    Holidays: <Holidays />,
+    Languages: <Languages />,
+};
+
 class DataManager extends Component {
     constructor(props) {
         super(props);
@@ -66,12 +75,7 @@ class DataManager extends Component {
                             <Content style={{ height: "600px" }}>
                                 <Row>
                                     <Col span={24}>
-                                        {this.state.tabValue === 'Employees' && <Employees />}
-                                        {this.state.tabValue === 'ActivityType' && <ActivityType />}
-                                        {this.state.tabValue === 'CaseClosure' && <CaseClosure />}
-                                        {this.state.tabValue === 'DefaultHearingTime' && <DefaultHearingTime />}
-                                        {this.state.tabValue === 'Holidays' && <Holidays />}
-                                        {this.state.tabValue === 'Languages' && <Languages />}
+                                        {RENDER_BY_TYPE[this.state.tabValue]}
                                     </Col>
                                 </Row>
                             </Content>
