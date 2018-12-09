@@ -52,4 +52,4 @@ export const getModalSettings = (actionType, onOk, onCancel, dmType) => {
         //okText,
         footer,
     }
-}
+};

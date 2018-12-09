@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import { Icon, Form, Input, Checkbox } from 'antd';
+import { Icon, Form, Input, Checkbox, DatePicker } from 'antd';
+import moment from 'moment';
 
 import DMTable from './DMTable';
 import data from '../../mocks/GetAllActTypes.json';
@@ -78,6 +79,8 @@ class ActivityType extends Component {
         this.handleShowModal = this.handleShowModal.bind(this);
         this.handleCancel = this.handleCancel.bind(this);
         this.handleOk = this.handleOk.bind(this);
+        this.onDateChange = this.onDateChange.bind(this);
+        this.handleFieldChange = this.handleFieldChange.bind(this);
         this.renderModalFields = this.renderModalFields.bind(this);
     }
 
@@ -85,7 +88,7 @@ class ActivityType extends Component {
         if (actype !== DM_ADD_ACTION_TYPE) {
             if (id) {
                 // the next line is fetching data from the json....
-                this.setState({ obj: data.find(d => d.Code === id) });
+                this.setState({ obj: { ...data.find(d => d.Code === id) } });
 
                 // TODO fetch the edit obj... (from action if needed)
                 if (actype === DM_EDIT_ACTION_TYPE) {
@@ -134,6 +137,32 @@ class ActivityType extends Component {
         this.setState({ showModal: false, showDeleteModal: false });
     }
 
+    handleFieldChange(e, field) {
+        const { obj } = this.state;
+
+        switch (field) {
+            case 'Code':
+            case 'Abbr':
+            case 'Description':
+                obj[field] = e.target.value;
+                break;
+            case 'Confidential':
+                obj[field] = e.target.checked;
+                break;
+            default:
+                break
+        }
+
+        this.setState({ obj });
+    }
+
+    onDateChange(d, ds, type) {
+        const { obj } = this.state;
+        obj[type] = ds || '';//moment(new Date());
+
+        this.setState({ obj });
+    }
+
     renderModalFields() {
         const { actionType, obj } = this.state;
         const isEditable = actionType === DM_ADD_ACTION_TYPE || actionType === DM_EDIT_ACTION_TYPE;
@@ -145,7 +174,7 @@ class ActivityType extends Component {
                     {...formItemLayout}
                 >
                     {isEditable ?
-                        <Input value={obj.Code} placeholder="Code" onChange={() => { }} />
+                        <Input value={obj.Code} placeholder="Code" onChange={e => this.handleFieldChange(e, 'Code')} />
                         :
                         <div>{obj.Code}</div>
                     }
@@ -155,7 +184,7 @@ class ActivityType extends Component {
                     {...formItemLayout}
                 >
                     {isEditable ?
-                        <Input value={obj.Abbr} placeholder="Abbreviation" onChange={() => { }} />
+                        <Input value={obj.Abbr} placeholder="Abbreviation" onChange={e => this.handleFieldChange(e, 'Abbr')} />
                         :
                         <div>{obj.Abbr}</div>
                     }
@@ -165,7 +194,7 @@ class ActivityType extends Component {
                     {...formItemLayout}
                 >
                     {isEditable ?
-                        <Input value={obj.Description} placeholder="Description" onChange={() => { }} />
+                        <Input value={obj.Description} placeholder="Description" onChange={e => this.handleFieldChange(e, 'Description')} />
                         :
                         <div>{obj.Description}</div>
                     }
@@ -175,7 +204,9 @@ class ActivityType extends Component {
                     {...formItemLayout}
                 >
                     {isEditable ?
-                        <Input value={obj.TermDate} placeholder="End Effective Date" onChange={() => { }} />
+                        <DatePicker placeholder="End Effective Date"
+                            value={obj.TermDate ? moment(new Date(obj.TermDate)) : ''}
+                            onChange={(d, ds) => { this.onDateChange(d, ds, 'TermDate') }} />
                         :
                         <div>{obj.TermDate}</div>
                     }
@@ -185,7 +216,7 @@ class ActivityType extends Component {
                     {...formItemLayout}
                 >
                     {isEditable ?
-                        <Checkbox checked={obj.Confidential} onChange={this.onChecked} placeholder="input placeholder" />
+                        <Checkbox checked={obj.Confidential} onChange={e => this.handleFieldChange(e, 'Confidential')} placeholder="input placeholder" />
                         :
                         <div>{obj.Confidential ? <Icon type="check" /> : <Icon type="close" />}</div>
                     }
@@ -206,6 +237,8 @@ class ActivityType extends Component {
                     handleShowModal={this.handleShowModal}
                     uniqueColumnName='Code'
 
+                    searchField='Description'
+
                     showModal={this.state.showModal}
                     showDeleteModal={this.state.showDeleteModal}
                     handleOk={this.handleOk}
@@ -213,8 +246,9 @@ class ActivityType extends Component {
                     modalTitle={title}
                     footer={footer}
                     width={'600px'}
+                    renderModalFields={this.renderModalFields}
                 >
-                    {this.renderModalFields()}
+
                 </DMTable>
             </div>
         )
