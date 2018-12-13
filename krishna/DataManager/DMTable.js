@@ -87,14 +87,14 @@ class DMTable extends Component {
                     render: (item) => {
                         return (
                             <div style={{ textAlign: "center" }}>
-                                <Icon type="edit" style={{ cursor: 'pointer' }} onClick={e => handleShowModal(e, DM_EDIT_ACTION_TYPE, item[uniqueColumnName])} />
+                                <Icon type="edit" style={{ cursor: 'pointer' }} onClick={e => handleShowModal(e, DM_EDIT_ACTION_TYPE, item)} />
                                 <Divider type="vertical" />
-                                <Icon type="delete" style={{ cursor: 'pointer' }} onClick={e => handleShowModal(e, DM_DELETE_ACTION_TYPE, item[uniqueColumnName])} />
+                                <Icon type="delete" style={{ cursor: 'pointer' }} onClick={e => handleShowModal(e, DM_DELETE_ACTION_TYPE, item)} />
                                 {/* 
                                 TODO --- Uncomment the below tags to display the details icon....
                             */}
                                 {/* <Divider type="vertical" />
-                            <Icon type="profile" style={{ cursor: 'pointer' }} onClick={e => handleShowModal(e, DM_DETAILS_ACTION_TYPE, item[uniqueColumnName])} /> */}
+                            <Icon type="profile" style={{ cursor: 'pointer' }} onClick={e => handleShowModal(e, DM_DETAILS_ACTION_TYPE, item)} /> */}
                             </div>
                         );
                     },

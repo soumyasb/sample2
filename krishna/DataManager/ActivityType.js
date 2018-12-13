@@ -47,8 +47,8 @@ class ActivityType extends Component {
                 dataIndex: 'Code',
                 key: 'Code',
                 // Remove the below line.. if you want to add the details icon.. 
-                render: c =>
-                    <a onClick={e => this.handleShowModal(e, DM_DETAILS_ACTION_TYPE, c)}
+                render: (c, obj) =>
+                    <a onClick={e => this.handleShowModal(e, DM_DETAILS_ACTION_TYPE, obj)}
                         style={{ textDecoration: 'underline', color: '#40a9ff' }}>
                         {c}
                     </a>
@@ -84,11 +84,11 @@ class ActivityType extends Component {
         this.renderModalFields = this.renderModalFields.bind(this);
     }
 
-    handleShowModal(e, actype, id) {
+    handleShowModal(e, actype, obj) {
         if (actype !== DM_ADD_ACTION_TYPE) {
-            if (id) {
+            if (obj) {
                 // the next line is fetching data from the json....
-                this.setState({ obj: { ...data.find(d => d.Code === id) } });
+                this.setState({ obj: { ...data.find(d => d.Code === obj.Code) } });
 
                 // TODO fetch the edit obj... (from action if needed)
                 if (actype === DM_EDIT_ACTION_TYPE) {
@@ -221,6 +221,24 @@ class ActivityType extends Component {
                         <div>{obj.Confidential ? <Icon type="check" /> : <Icon type="close" />}</div>
                     }
                 </FormItem>
+
+                {!isEditable &&
+                    <div>
+                        <FormItem
+                            label="Last Updated By"
+                            {...formItemLayout}
+                        >
+                            <div>{obj.lastUpdatedBy}</div>
+                        </FormItem>
+                        <FormItem
+                            label="Last Updated Date"
+                            {...formItemLayout}
+                        >
+                            <div>{obj.lastUpdetedDate}</div>
+                        </FormItem>
+                    </div>
+                }
+
             </Form>
         );
     }

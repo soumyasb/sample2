@@ -47,8 +47,8 @@ class DefaultHearingTime extends Component {
                 dataIndex: 'Category',
                 key: 'Category',
                 // Remove the below line.. if you want to add the details icon.. 
-                render: c =>
-                    <a onClick={e => this.handleShowModal(e, DM_DETAILS_ACTION_TYPE, c.toLowerCase())}
+                render: (c, obj) =>
+                    <a onClick={e => this.handleShowModal(e, DM_DETAILS_ACTION_TYPE, obj)}
                         style={{ textDecoration: 'underline', color: '#40a9ff' }}>
                         {c}
                     </a>
@@ -78,11 +78,11 @@ class DefaultHearingTime extends Component {
         this.renderModalFields = this.renderModalFields.bind(this);
     }
 
-    handleShowModal(e, actype, id) {
+    handleShowModal(e, actype, obj) {
         if (actype !== DM_ADD_ACTION_TYPE) {
-            if (id) {
+            if (obj) {
                 // the next line is fetching data from the json....
-                this.setState({ obj: { ...data.find(d => d.Category.toLowerCase() === id.toLowerCase()) } });
+                this.setState({ obj: { ...data.find(d => d.Category === obj.Category) } });
 
                 // TODO fetch the edit obj... (from action if needed)
                 if (actype === DM_EDIT_ACTION_TYPE) {

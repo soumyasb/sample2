@@ -52,8 +52,8 @@ class Holidays extends Component {
                 dataIndex: 'HolidayDate',
                 key: 'HolidayDate',
                 // Remove the below line.. if you want to add the details icon.. 
-                render: c =>
-                    <a onClick={e => this.handleShowModal(e, DM_DETAILS_ACTION_TYPE, c)}
+                render: (c, obj) =>
+                    <a onClick={e => this.handleShowModal(e, DM_DETAILS_ACTION_TYPE, obj)}
                         style={{ textDecoration: 'underline', color: '#40a9ff' }}>
                         {moment(c).format('MMMM DD')}
                     </a>
@@ -84,11 +84,11 @@ class Holidays extends Component {
         // return the Data and yearFilters using map similar to what is in the constructor....
     }
 
-    handleShowModal(e, actype, id) {
+    handleShowModal(e, actype, obj) {
         if (actype !== DM_ADD_ACTION_TYPE) {
-            if (id) {
+            if (obj) {
                 // the next line is fetching data from the json....
-                this.setState({ obj: { ...data.find(d => d.HolidayDate === id) } });
+                this.setState({ obj: { ...data.find(d => d.HolidayDate === obj.HolidayDate) } });
 
                 // TODO fetch the edit obj... (from action if needed)
                 if (actype === DM_EDIT_ACTION_TYPE) {

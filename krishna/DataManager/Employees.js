@@ -64,8 +64,9 @@ class Employees extends Component {
                 title: 'User ID',
                 dataIndex: 'UserID',
                 key: 'UserID',
-                render: u =>
-                    <a onClick={e => this.handleShowModal(e, DM_DETAILS_ACTION_TYPE, u)}
+                width: '15%',
+                render: (u, obj) =>
+                    <a onClick={e => this.handleShowModal(e, DM_DETAILS_ACTION_TYPE, obj)}
                         style={{ textDecoration: 'underline', color: '#40a9ff' }}>
                         {u}
                     </a>
@@ -73,8 +74,7 @@ class Employees extends Component {
             {
                 title: 'Last Name',
                 dataIndex: 'LastName',
-                key: 'LastName'
-
+                key: 'LastName',
             },
             {
                 title: 'First Name',
@@ -82,7 +82,6 @@ class Employees extends Component {
                 key: 'FirstName'
             }
         ];
-
 
         this.handleShowModal = this.handleShowModal.bind(this);
         this.handleCancel = this.handleCancel.bind(this);
@@ -92,11 +91,11 @@ class Employees extends Component {
         this.renderModalFields = this.renderModalFields.bind(this);
     }
 
-    handleShowModal(e, actype, id) {
+    handleShowModal(e, actype, obj) {
         if (actype !== DM_ADD_ACTION_TYPE) {
-            if (id) {
+            if (obj) {
                 // the next line is data from the json.... 
-                this.setState({ obj: { ...data.find(d => d.UserID === id) } });
+                this.setState({ obj: { ...data.find(d => d.UserID === obj.UserID) } });
 
                 // TODO fetch the edit obj... (from action if needed)
                 if (actype === DM_EDIT_ACTION_TYPE) {
