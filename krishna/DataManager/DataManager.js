@@ -5,20 +5,22 @@ import { Layout, Menu, Row, Col, Icon } from 'antd';
 
 import Employees from './Employees';
 import ActivityType from './ActivityType';
-import CaseClosure from './CaseClosure';
 import DefaultHearingTime from './DefaultHearingTime';
 import Holidays from './Holidays';
 import Languages from './Languages';
+import Offices from './Offices';
+
+import './style.css';
 
 const { Content, Sider } = Layout;
 
 const RENDER_BY_TYPE = {
-    Employees: < Employees />,
+    Employees: <Employees />,
     ActivityType: <ActivityType />,
-    CaseClosure: <CaseClosure />,
     DefaultHearingTime: <DefaultHearingTime />,
     Holidays: <Holidays />,
     Languages: <Languages />,
+    Offices: <Offices />
 };
 
 class DataManager extends Component {
@@ -58,9 +60,6 @@ class DataManager extends Component {
                                     <Menu.Item key="ActivityType">
                                         <span>Activity Type</span>
                                     </Menu.Item>
-                                    <Menu.Item key="CaseClosure">
-                                        <span>Case Closure</span>
-                                    </Menu.Item>
                                     <Menu.Item key="DefaultHearingTime">
                                         <span>Default Hearing Time</span>
                                     </Menu.Item>
@@ -69,6 +68,9 @@ class DataManager extends Component {
                                     </Menu.Item>
                                     <Menu.Item key="Languages">
                                         <span>Languages</span>
+                                    </Menu.Item>
+                                    <Menu.Item key="Offices">
+                                        <span>Offices</span>
                                     </Menu.Item>
                                 </Menu>
                             </Sider>
