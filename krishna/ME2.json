@@ -1,0 +1,601 @@
+{
+  "RequestorCode": "99999",
+  "Operator": "MPG",
+  "NetName": "#ADMV6LI",
+  "LoginId": "MWMPG4  ",
+  "DLNumber": "I0000000",
+  "ThreeCharacterName": "VIN",
+  "Birthdate": null,
+  "RestrictionCodes": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Wearing corrective lenses.",
+      "Value": "1"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Wearing hearing aid.",
+      "Value": "2"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Accompanied by a waiver / exemption.",
+      "Value": "3"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Driving within an exempt intra city zone.",
+      "Value": "4"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Accompanied by a Skill Performance Evaluation certificate (SPE).",
+      "Value": "5"
+    }
+  ],
+  "ExaminerSuffix": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "JR",
+      "Value": "JR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SR",
+      "Value": "SR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "I",
+      "Value": "I"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "II",
+      "Value": "II"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "III",
+      "Value": "III"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "IV",
+      "Value": "IV"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "V",
+      "Value": "V"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "VI",
+      "Value": "VI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "VII",
+      "Value": "VII"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "VIII",
+      "Value": "VIII"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "IX",
+      "Value": "IX"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1ST",
+      "Value": "1ST"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2ND",
+      "Value": "2ND"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "3RD",
+      "Value": "3RD"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "4TH",
+      "Value": "4TH"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "5TH",
+      "Value": "5th"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "6TH",
+      "Value": "6TH"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "7TH",
+      "Value": "7th"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "8TH",
+      "Value": "8TH"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "9TH",
+      "Value": "9th"
+    }
+  ],
+  "ExaminerTitle": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Advance Practice Nurse",
+      "Value": "AN"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Chiropractor",
+      "Value": "CH"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Osteopathic Doctor",
+      "Value": "DO"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Medical Doctor",
+      "Value": "MD"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Physician Assistant",
+      "Value": "PA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Other",
+      "Value": "XX"
+    }
+  ],
+  "CheckCA": true,
+  "States": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Alabama",
+      "Value": "AL"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "AK-Alaska",
+      "Value": "AK"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "AZ-Arizona",
+      "Value": "AZ"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "AR-Arkansas",
+      "Value": "AR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "CO-Colorado",
+      "Value": "CO"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "CT-Connecticut",
+      "Value": "CT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DE-Delaware",
+      "Value": "DE"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DC-District of Columbia",
+      "Value": "DC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "FL-Florida",
+      "Value": "FL"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "GA-Georgia",
+      "Value": "GA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "HI-Hawaii",
+      "Value": "HI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "ID-Idaho",
+      "Value": "ID"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "IL-Illinois",
+      "Value": "IL"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "IN-Indiana",
+      "Value": "IN"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "IA-Iowa",
+      "Value": "IA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "KS-Kansas",
+      "Value": "KS"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "KY-Kentucky",
+      "Value": "KY"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "LA-Louisiana",
+      "Value": "LA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "ME-Maine",
+      "Value": "ME"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "MD-Maryland",
+      "Value": "MD"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "MA-Massachusetts",
+      "Value": "MA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "MI-Michigan",
+      "Value": "MI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "MN-Minnesota",
+      "Value": "MN"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "MS-Mississippi",
+      "Value": "MS"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "MO-Missouri",
+      "Value": "MO"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "MT-Montana",
+      "Value": "MT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "NE-Nebraska",
+      "Value": "NE"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "NV-Nevada",
+      "Value": "NV"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "NH-New Hampshire",
+      "Value": "NH"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "NJ-New Jersey",
+      "Value": "NJ"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "NM-New Mexico",
+      "Value": "NM"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "NY-New York",
+      "Value": "NY"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "NC-North Carolina",
+      "Value": "NC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "ND-North Dakota",
+      "Value": "ND"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "OH-Ohio",
+      "Value": "OH"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "OK-Oklahoma",
+      "Value": "OK"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "OR-Oregon",
+      "Value": "OR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "PA-Pennsylvania",
+      "Value": "PA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "RI-Rhode Island",
+      "Value": "RI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SC-South Carolina",
+      "Value": "SC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "SD-South Dakota",
+      "Value": "SD"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "TN-Tennessee",
+      "Value": "TE"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "TX-Texas",
+      "Value": "TX"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "UT-Utah",
+      "Value": "UT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "VT-Vermont",
+      "Value": "VT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "VA-Virginia",
+      "Value": "VA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "WA-Washington",
+      "Value": "WA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "WV-West Virginia",
+      "Value": "WV"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "WI-Wisconsin",
+      "Value": "WI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "WY-Wyoming",
+      "Value": "Wy"
+    }
+  ],
+  "SelfCertCode": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "NA",
+      "Value": "NA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "NI",
+      "Value": "NI"
+    }
+  ]
+}

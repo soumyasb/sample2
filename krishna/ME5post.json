@@ -1,0 +1,17 @@
+{
+  "loginId": "string",
+  "netName": "string",
+  "requestorCode": "string",
+  "operator": "string",
+  "dlNumber": "string",
+  "threeCharacterLastName": "string",
+  "status": "string",
+  "statusMessage": "string",
+  "medCertIssueDate": "string",
+  "medCertExpireDate": "string",
+  "examinerLicense": "string",
+  "examinerState": "string",
+  "mE5Response": "string",
+  "nextTran": "string",
+  "error": true
+}
