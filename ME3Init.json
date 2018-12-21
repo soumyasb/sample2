@@ -1,0 +1,44 @@
+{
+  "RequestorCode": "99999",
+  "Operator": "MPG",
+  "NetName": "#ADMV6LI",
+  "LoginId": "MWMPG4  ",
+  "DLNumber": "I0000000",
+  "ThreeCharacterName": "VIN",
+  "Status": "N",
+  "MedCertIssueDate": "10-01-2018",
+  "MedCertExpireDate": "10-01-2019",
+  "ExaminerLicense": "ABC",
+  "ExaminerState": "CA",
+  "WaiverType": null,
+  "WaiverEffectiveDate": null,
+  "WaiverExpirationDate": null,
+  "WaiverRescindDate": null,
+  "SPEEffectiveDate": null,
+  "SPEExpirationDate": null,
+  "SPECancelDate": null,
+  "WaiverTypeSelect": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Wearing corrective lenses.",
+      "Value": "1"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Wearing hearing aid.",
+      "Value": "2"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Accompanied by a waiver / exemption.",
+      "Value": "3"
+    }
+  ],
+  "Message": null
+}

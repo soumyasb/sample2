@@ -1,0 +1,23 @@
+{
+  "loginId": "MWMPG4",
+  "netName": "#ADMV6LI",
+  "requestorCode": "99999",
+  "operator": "MPG",
+  "dlNumber": "I0000001",
+  "threeCharacterLastName": "VIN",
+  "status": "N",
+  "MedCertIssueDate": "10-01-2018",
+  "MedCertExpireDate": "10-01-2019",
+  "ExaminerLicense": "ABC",
+  "ExaminerState": "CA",
+  "waiverType": "D",
+  "waiverEffectiveDate": "11022018",
+  "waiverExpirationDate": "11022019",
+  "waiverRescindDate": null,
+  "speEffectiveDate": null,
+  "speExpirationDate": null,
+  "speCancelDate": null,
+  "mE3Response": null,
+  "nextTran": null,
+  "error": true
+}
