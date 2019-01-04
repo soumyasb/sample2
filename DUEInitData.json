@@ -1,0 +1,3673 @@
+{
+  "RequestorCode": "86301",
+  "Operator": "MPG",
+  "NetName": "#ADMV6LI",
+  "LoginId": "MWMPG4  ",
+  "DLNumber": null,
+  "ThreeCharacterName": null,
+  "Birthdate": null,
+  "DSUserFieldOffice": "SAC",
+  "FirstAuthoritySection": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15250B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15300B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15300A1"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15300A2"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15300A3"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15300A4"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15300A5"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15302A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15302B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15302C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15302D"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15302E"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15302F"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15302G"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15304"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15306"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15308"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15311A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15311B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15311C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15312A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15312B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15312C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Court Stay (Appeals Only)                         ",
+      "Value": "4"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DMV Stay                                          ",
+      "Value": "5"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DMVR Stay                                         ",
+      "Value": "141055"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "No Disqualification Imposed                       ",
+      "Value": "15250B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-DUI                                   ",
+      "Value": "15300A1"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-Leaving the Scene                     ",
+      "Value": "15300A2"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-Driving Privilege Withdrawn           ",
+      "Value": "15300A3"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-Fatality w/Negligence                 ",
+      "Value": "15300A4"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-Evading Peace Officer                 ",
+      "Value": "15300A5"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-HAZMAT or Felonious use of Com Vehicle",
+      "Value": "15300B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense-DUI                                   ",
+      "Value": "15302A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense-Leaving the Scene                     ",
+      "Value": "15302B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense-Felonious use of Com Vehicle          ",
+      "Value": "15302C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense-Driving Privilege Withdrawn           ",
+      "Value": "15302D"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense-Fatality w/Negligence                 ",
+      "Value": "15302E"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense- Evading Peace Officer                ",
+      "Value": "15302F"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Combination of Violations in 15302A thru F        ",
+      "Value": "15302G"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Controlled Substance Offense                      ",
+      "Value": "15304"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense in 3 yrs for Serious Traffic Offense  ",
+      "Value": "15306"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "3rd Offense in 3 yrs for Serious Traffic Offense  ",
+      "Value": "15308"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-Out of Service Order                  ",
+      "Value": "15311A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense in 10 yrs for Out of Service Order    ",
+      "Value": "15311B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "3rd or More Off in 10 yrs for Out of Service Order",
+      "Value": "15311C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-RR Crossing Violation                 ",
+      "Value": "15312A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense in 3 yrs for RR Crossing Violation    ",
+      "Value": "15312B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "3rd or More Off in 3 yrs for RR Crossing Violation",
+      "Value": "15312C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Use of a Motor Vehicle to Commit a Felony         ",
+      "Value": "15300A6"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Driving ComVeh When Comm Lic Withdrawn            ",
+      "Value": "15300A7"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Fatality w/ Negligence                            ",
+      "Value": "15300A8"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Chemical Test Refusal                             ",
+      "Value": "15300A9"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "(15300A10) Evading a Peace Officer-ComVeh         ",
+      "Value": "15300A0"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Fatality w/ Negligence                        ",
+      "Value": "15302H"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Chemical Test Refusal                         ",
+      "Value": "15302I"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Evading a Peace Officer-ComVeh                ",
+      "Value": "15302J"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Combination                                   ",
+      "Value": "15302K"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Felony Use-ComVeh                                 ",
+      "Value": "15304A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Serious Traffic Violation-2nd ComVeh              ",
+      "Value": "15306A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Serious Traffic Violation-2nd w/license Withdrawn ",
+      "Value": "15306B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Serious Traffic Violation-3rd ComVeh              ",
+      "Value": "15308A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Serious Traffic Violation-3rd w/license Withdrawn ",
+      "Value": "15308B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Out of Service Order w/HAZMAT or 16 Pass Vehicle  ",
+      "Value": "15311D"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Out of Service Order-3rd in 10 Yrs                ",
+      "Value": "15311F"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Railroad Highway Crossing-ComVeh                  ",
+      "Value": "15312A1"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Railroad Highway Crossing-ComVeh              ",
+      "Value": "15312A2"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "3rd Railroad Highway Crossing-ComVeh              ",
+      "Value": "15312A3"
+    }
+  ],
+  "SecondAuthoritySection": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15250B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15300B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15300A1"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15300A2"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15300A3"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15300A4"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15300A5"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15302A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15302B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15302C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15302D"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15302E"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15302F"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15302G"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15304"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15306"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15308"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15311A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15311B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15311C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15312A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15312B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15312C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Court Stay (Appeals Only)                         ",
+      "Value": "4"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DMV Stay                                          ",
+      "Value": "5"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DMVR Stay                                         ",
+      "Value": "141055"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "No Disqualification Imposed                       ",
+      "Value": "15250B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-DUI                                   ",
+      "Value": "15300A1"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-Leaving the Scene                     ",
+      "Value": "15300A2"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-Driving Privilege Withdrawn           ",
+      "Value": "15300A3"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-Fatality w/Negligence                 ",
+      "Value": "15300A4"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-Evading Peace Officer                 ",
+      "Value": "15300A5"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-HAZMAT or Felonious use of Com Vehicle",
+      "Value": "15300B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense-DUI                                   ",
+      "Value": "15302A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense-Leaving the Scene                     ",
+      "Value": "15302B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense-Felonious use of Com Vehicle          ",
+      "Value": "15302C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense-Driving Privilege Withdrawn           ",
+      "Value": "15302D"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense-Fatality w/Negligence                 ",
+      "Value": "15302E"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense- Evading Peace Officer                ",
+      "Value": "15302F"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Combination of Violations in 15302A thru F        ",
+      "Value": "15302G"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Controlled Substance Offense                      ",
+      "Value": "15304"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense in 3 yrs for Serious Traffic Offense  ",
+      "Value": "15306"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "3rd Offense in 3 yrs for Serious Traffic Offense  ",
+      "Value": "15308"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-Out of Service Order                  ",
+      "Value": "15311A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense in 10 yrs for Out of Service Order    ",
+      "Value": "15311B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "3rd or More Off in 10 yrs for Out of Service Order",
+      "Value": "15311C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-RR Crossing Violation                 ",
+      "Value": "15312A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense in 3 yrs for RR Crossing Violation    ",
+      "Value": "15312B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "3rd or More Off in 3 yrs for RR Crossing Violation",
+      "Value": "15312C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Use of a Motor Vehicle to Commit a Felony         ",
+      "Value": "15300A6"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Driving ComVeh When Comm Lic Withdrawn            ",
+      "Value": "15300A7"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Fatality w/ Negligence                            ",
+      "Value": "15300A8"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Chemical Test Refusal                             ",
+      "Value": "15300A9"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "(15300A10) Evading a Peace Officer-ComVeh         ",
+      "Value": "15300A0"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Fatality w/ Negligence                        ",
+      "Value": "15302H"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Chemical Test Refusal                         ",
+      "Value": "15302I"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Evading a Peace Officer-ComVeh                ",
+      "Value": "15302J"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Combination                                   ",
+      "Value": "15302K"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Felony Use-ComVeh                                 ",
+      "Value": "15304A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Serious Traffic Violation-2nd ComVeh              ",
+      "Value": "15306A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Serious Traffic Violation-2nd w/license Withdrawn ",
+      "Value": "15306B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Serious Traffic Violation-3rd ComVeh              ",
+      "Value": "15308A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Serious Traffic Violation-3rd w/license Withdrawn ",
+      "Value": "15308B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Out of Service Order w/HAZMAT or 16 Pass Vehicle  ",
+      "Value": "15311D"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Out of Service Order-3rd in 10 Yrs                ",
+      "Value": "15311F"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Railroad Highway Crossing-ComVeh                  ",
+      "Value": "15312A1"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Railroad Highway Crossing-ComVeh              ",
+      "Value": "15312A2"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "3rd Railroad Highway Crossing-ComVeh              ",
+      "Value": "15312A3"
+    }
+  ],
+  "Reasons": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "License Cancellation",
+      "Value": "000"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "PL Warn Lttr",
+      "Value": "004"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Alcohol",
+      "Value": "100"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Alcohol/Negligent Operator",
+      "Value": "101"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Alcohol/Drug Addition (Not Methadone)",
+      "Value": "103"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Alc/Drug Add or Hab use (Meth. Main",
+      "Value": "104"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Alcohol/Refusal of CL A or B Licens",
+      "Value": "114"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Alcohol/Mandatory Action Interview",
+      "Value": "115"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Mental Condition",
+      "Value": "120"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Mental/Negligent Operator",
+      "Value": "121"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Mental/Alcohol",
+      "Value": "122"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Mental Condition/Physical Condition",
+      "Value": "123"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Mental/Refusal of Cl A or B License",
+      "Value": "130"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Mental Condition/Alzheimer's Disease",
+      "Value": "134"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Mental Condition/Dementia",
+      "Value": "139"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Physical",
+      "Value": "140"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Physical/Negligent Operator",
+      "Value": "141"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Physical/Alcohol",
+      "Value": "142"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Physical/Refusal of Cl A or B License",
+      "Value": "149"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Physical/Cardiovasculal Disease",
+      "Value": "153"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Physical/Diabetes Mellitus",
+      "Value": "154"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Physical/Hearing Disorders/Deficiencies",
+      "Value": "155"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Physical/Musculoskeletal Disorders",
+      "Value": "156"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Physical/Neurological Disorders",
+      "Value": "157"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Physical/Pulmonary Disorders",
+      "Value": "158"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Physical Condition/Vision",
+      "Value": "159"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Lapse of Consciousness",
+      "Value": "160"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Lapse of Cons/Negligent Operator",
+      "Value": "161"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Lapse of Cons/Alcohol",
+      "Value": "162"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Lapse of Cons/Drug Addition (Methadone)",
+      "Value": "167"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Lapse of Cons/Ref of Cl A or B License",
+      "Value": "169"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Drug Addition (Not Methadone)",
+      "Value": "203"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Drug Addition (Methadone)",
+      "Value": "204"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Drug Addition/Neg Operator (Not Meth)",
+      "Value": "216"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Drug/Refusal of Cl A or B Lic (Not Meth)",
+      "Value": "220"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Drug Addition/Negligent Op (Methadone)",
+      "Value": "222"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Drug/Refusal of Cl A or B Lic (Meth)",
+      "Value": "225"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "299",
+      "Value": "240"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Lack of Skill",
+      "Value": "241"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Lask of Knowledge/Skill",
+      "Value": "242"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Negligent Operator (Not 311,312,316,317)",
+      "Value": "309"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Negligent Oper/Viol Traf Laws NOTS III",
+      "Value": "311"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Negligent Oper/Viol Traf Laws & Fatal",
+      "Value": "312"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Negligent Operator/Serious Injury",
+      "Value": "324"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Provisional Neg Operator/2 points",
+      "Value": "370"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Provisional Neg Operator/3+ points",
+      "Value": "371"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Fraudulent Application",
+      "Value": "400"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Unlawful Use of Lic-not issued to subj",
+      "Value": "401"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Unlawful Use of Lic-License Altered",
+      "Value": "402"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Unlawful Use of Lic-tests by another",
+      "Value": "403"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Unlawful Use of Lic-Fictitious,Fraud,Alt",
+      "Value": "404"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Fraudulent Application/False Name",
+      "Value": "405"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Fraudulent App/Tests taken by another",
+      "Value": "407"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Fraudulent App/Filed by other than subj",
+      "Value": "409"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Fraudulent App/False custody statement",
+      "Value": "411"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Fraudulent App/False Application",
+      "Value": "413"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Fraudulent App/Under Suspension",
+      "Value": "415"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Fraudulent App-False Name/Under Susp",
+      "Value": "420"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Fraudulent App-False Name/Date of Birth",
+      "Value": "421"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Fraud Doc-False doc submitted",
+      "Value": "432"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Fraud Legal Presence Document",
+      "Value": "433"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Violation of N.O. Probation",
+      "Value": "450"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd or subsequent violation of N.O. Prob",
+      "Value": "451"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disq",
+      "Value": "60A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Canc-Voluntary Surrender Letter",
+      "Value": "640"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Railroad crossing violation - coml",
+      "Value": "657"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Railroad crossing violation-coml",
+      "Value": "658"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "3rd Railroad crossing violation-coml",
+      "Value": "659"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Evading peace officer-coml",
+      "Value": "660"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Evading peace officer-hazmat",
+      "Value": "661"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Evading peace officer-coml",
+      "Value": "662"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Out-of-service non-compliance",
+      "Value": "663"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Out-of-service non-compliance",
+      "Value": "664"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Out-of-service non-compliance",
+      "Value": "665"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DUI/DRUGS-coml",
+      "Value": "667"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Hit and run coml",
+      "Value": "668"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DUI/DRUGS hazardous materials",
+      "Value": "670"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Hit and run/hazardous materials",
+      "Value": "671"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Felony/hazardous materials",
+      "Value": "672"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd DUI/DRUGS coml",
+      "Value": "673"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd hit and run/coml",
+      "Value": "674"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd felony conviction/coml",
+      "Value": "675"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd DUI/Hit and run/evading/felony coml",
+      "Value": "676"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Health and safety felony conviction coml",
+      "Value": "677"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Serious traffic violation -coml 2 in 3 y",
+      "Value": "678"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Serious traffic violation-coml 3 in 3 ye",
+      "Value": "679"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Invalid CDL-coml",
+      "Value": "681"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Causing a  fatality-coml",
+      "Value": "682"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Invalid CDL-Hazmat",
+      "Value": "684"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Causing a fatality-Hazmat",
+      "Value": "685"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Invalid CDL-coml",
+      "Value": "686"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd causing a fatality-coml",
+      "Value": "687"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Ref of Cl A/B (failed to meet phys)",
+      "Value": "690"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Demand hearing for disqualification",
+      "Value": "699"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Drunk driving or Drugs Commercial",
+      "Value": "700"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Hit and Run Commercial",
+      "Value": "701"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Drunk Driving or Drugs Hazardous Materia",
+      "Value": "703"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Hit ans Run/Hazardous Materials",
+      "Value": "704"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Felony Conviction/Hazardous Materials",
+      "Value": "705"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Drunk Driving or Drugs/Commercial",
+      "Value": "706"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Hit and Run/Commercial",
+      "Value": "707"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Felony Conviction/Commercial",
+      "Value": "708"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd DUI/Hit Run/Evading/Felony/Fatality-",
+      "Value": "709"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Health and Safety Felony Conviction/Comm",
+      "Value": "710"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Serious Traffic Violation - 2 in 3 years",
+      "Value": "711"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Serious Traffic Violation - 3 in 3 years",
+      "Value": "712"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Evading a Peace Officer/Commercial",
+      "Value": "713"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Evading a Peace Officer/HazMat",
+      "Value": "714"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Evading a Peace Officer/Commercial",
+      "Value": "715"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Failure to Comply with Out-of-Service Or",
+      "Value": "716"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Failure to Comply w/ Out/Svc or 2 in 10",
+      "Value": "717"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Failure to Comply w/ Out/Svc or 3 in 10",
+      "Value": "718"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Invalid CDL-Coml",
+      "Value": "719"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Causing a fatality-Coml",
+      "Value": "720"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Invalid CDL-HazMat",
+      "Value": "721"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Causing a fatality-HazMat",
+      "Value": "722"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Invalid CDL-Coml",
+      "Value": "723"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd causing a fatality-Coml",
+      "Value": "724"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st railroad crossing violation-commerci",
+      "Value": "725"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd railroad crossing violation-commerci",
+      "Value": "726"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "3rd railroad crossing violation-commerci",
+      "Value": "727"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Alcohol/Disqualification of CDL",
+      "Value": "820"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Mental condition/Disqualification of CDL",
+      "Value": "822"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Physical condition/Disqualification of C",
+      "Value": "823"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Lapse of Cons/Disqualification of CDL",
+      "Value": "824"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Drug addiction or Habitual use Disqualif",
+      "Value": "825"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Disqualification of CDL/ Fail to meet ph",
+      "Value": "826"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Violation of Restriction-Junior Permit",
+      "Value": "830"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Violation of Restriction-Other than Ins.",
+      "Value": "831"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Admin Per Se/Refusal",
+      "Value": "860"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Admin Per Se/Excess BAC",
+      "Value": "865"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "PAS Refusal",
+      "Value": "866"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "0.01 Admin Per Se",
+      "Value": "867"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Admin Per Se Dismissal",
+      "Value": "868"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "KHM-3434",
+      "Value": "872"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Demand Hrg/Tow Truck Driver",
+      "Value": "873"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Demand Hrg/Hazardous Materials Endr",
+      "Value": "875"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "KHM-3434",
+      "Value": "880"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "KHM-3434",
+      "Value": "881"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "KHM-3434",
+      "Value": "882"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "KHM-3434",
+      "Value": "883"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "KHM-3434",
+      "Value": "884"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "KHM-3434",
+      "Value": "885"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "KHM-3434",
+      "Value": "887"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "KHM-3434",
+      "Value": "888"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "KHM-3434",
+      "Value": "889"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "KXH-3364",
+      "Value": "890"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "KHM-3434",
+      "Value": "891"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Demand Hrg/Ambulance",
+      "Value": "892"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Demand Hrg/Farm Labor",
+      "Value": "893"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "KHM-3434",
+      "Value": "894"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Demand Hrg/School-Youth Bus,SPAB",
+      "Value": "895"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Demand Hrg/Radioactive Materials",
+      "Value": "896"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "KHM-3434",
+      "Value": "897"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "KHM-3434",
+      "Value": "898"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "KHM-3434",
+      "Value": "899"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Demand FR Hearing",
+      "Value": "950"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "955",
+      "Value": "955"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "admin per se ????",
+      "Value": "966"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Acquittal",
+      "Value": "ACQ"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "APS",
+      "Value": "APS"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Court Case - Tort",
+      "Value": "CCT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Court Case - Writ",
+      "Value": "CCW"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Disqualification",
+      "Value": "DIS"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Disqualification Support Case",
+      "Value": "DSC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "PAS",
+      "Value": "PAS"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Quality Review",
+      "Value": "QLR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Renewal By Mail",
+      "Value": "RBM"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Refund",
+      "Value": "REF"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Renewed Hearing Right",
+      "Value": "REN"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Stay",
+      "Value": "STY"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Subpoena - Appearance",
+      "Value": "SUA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Subpoena - Record Only",
+      "Value": "SUR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Tape Request",
+      "Value": "TPR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Transcript Request",
+      "Value": "TSR"
+    }
+  ],
+  "CoFo": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Recreate New Automated Order                                ",
+      "Value": "5"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Recreate Order for Remail                                   ",
+      "Value": "6"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Amend Type Action 14 to 13                                  ",
+      "Value": "7"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "To Remail an APS action to another address (Not the Latest) ",
+      "Value": "8"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Amended Order (Susp/Rev/Ref/Canc/Restr/Prob)                ",
+      "Value": "A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Cor Order (Susp/Rev/Ref/Canc/Restr/Prob)                    ",
+      "Value": "B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "File Only NBA (No Better Address) or Deceased               ",
+      "Value": "C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "File Only-Amended Order (Susp/Rev/Ref/Canc/Restr/Prob)      ",
+      "Value": "D"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "File Only-Cor Order (Susp/Rev/Ref/Canc/Restr/Prob)          ",
+      "Value": "E"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Amended Order (Reinstatement)                               ",
+      "Value": "F"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Amended Order (Term/Set Aside)                              ",
+      "Value": "L"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "File Only-Subj Deceased                                     ",
+      "Value": "M"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Cor Order (Term/Set Aside)                                  ",
+      "Value": "R"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Cor Order (Reinstatement)                                   ",
+      "Value": "U"
+    }
+  ],
+  "OriginalAuthoritySection": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15250B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15300B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15300A1"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15300A2"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15300A3"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15300A4"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15300A5"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15302A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15302B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15302C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15302D"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15302E"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15302F"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15302G"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15304"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15306"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15308"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15311A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15311B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15311C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15312A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15312B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Commercial Disqualification                       ",
+      "Value": "15312C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Court Stay (Appeals Only)                         ",
+      "Value": "4"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DMV Stay                                          ",
+      "Value": "5"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DMVR Stay                                         ",
+      "Value": "141055"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "No Disqualification Imposed                       ",
+      "Value": "15250B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-DUI                                   ",
+      "Value": "15300A1"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-Leaving the Scene                     ",
+      "Value": "15300A2"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-Driving Privilege Withdrawn           ",
+      "Value": "15300A3"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-Fatality w/Negligence                 ",
+      "Value": "15300A4"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-Evading Peace Officer                 ",
+      "Value": "15300A5"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-HAZMAT or Felonious use of Com Vehicle",
+      "Value": "15300B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense-DUI                                   ",
+      "Value": "15302A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense-Leaving the Scene                     ",
+      "Value": "15302B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense-Felonious use of Com Vehicle          ",
+      "Value": "15302C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense-Driving Privilege Withdrawn           ",
+      "Value": "15302D"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense-Fatality w/Negligence                 ",
+      "Value": "15302E"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense- Evading Peace Officer                ",
+      "Value": "15302F"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Combination of Violations in 15302A thru F        ",
+      "Value": "15302G"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Controlled Substance Offense                      ",
+      "Value": "15304"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense in 3 yrs for Serious Traffic Offense  ",
+      "Value": "15306"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "3rd Offense in 3 yrs for Serious Traffic Offense  ",
+      "Value": "15308"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-Out of Service Order                  ",
+      "Value": "15311A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense in 10 yrs for Out of Service Order    ",
+      "Value": "15311B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "3rd or More Off in 10 yrs for Out of Service Order",
+      "Value": "15311C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "1st Offense-RR Crossing Violation                 ",
+      "Value": "15312A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Offense in 3 yrs for RR Crossing Violation    ",
+      "Value": "15312B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "3rd or More Off in 3 yrs for RR Crossing Violation",
+      "Value": "15312C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Use of a Motor Vehicle to Commit a Felony         ",
+      "Value": "15300A6"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Driving ComVeh When Comm Lic Withdrawn            ",
+      "Value": "15300A7"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Fatality w/ Negligence                            ",
+      "Value": "15300A8"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Chemical Test Refusal                             ",
+      "Value": "15300A9"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "(15300A10) Evading a Peace Officer-ComVeh         ",
+      "Value": "15300A0"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Fatality w/ Negligence                        ",
+      "Value": "15302H"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Chemical Test Refusal                         ",
+      "Value": "15302I"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Evading a Peace Officer-ComVeh                ",
+      "Value": "15302J"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Combination                                   ",
+      "Value": "15302K"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Felony Use-ComVeh                                 ",
+      "Value": "15304A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Serious Traffic Violation-2nd ComVeh              ",
+      "Value": "15306A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Serious Traffic Violation-2nd w/license Withdrawn ",
+      "Value": "15306B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Serious Traffic Violation-3rd ComVeh              ",
+      "Value": "15308A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Serious Traffic Violation-3rd w/license Withdrawn ",
+      "Value": "15308B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Out of Service Order w/HAZMAT or 16 Pass Vehicle  ",
+      "Value": "15311D"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Out of Service Order-3rd in 10 Yrs                ",
+      "Value": "15311F"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Railroad Highway Crossing-ComVeh                  ",
+      "Value": "15312A1"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "2nd Railroad Highway Crossing-ComVeh              ",
+      "Value": "15312A2"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "3rd Railroad Highway Crossing-ComVeh              ",
+      "Value": "15312A3"
+    }
+  ],
+  "UpdateCopies": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "System Generated Order",
+      "Value": " "
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Update Only - No Order",
+      "Value": "0"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Manually Typed order",
+      "Value": "9"
+    }
+  ],
+  "FieldFile": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "City of Commerce    ",
+      "Value": "CC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "El Segundo          ",
+      "Value": "ES"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Fresno              ",
+      "Value": "FS"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Irvine              ",
+      "Value": "IR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Oakland             ",
+      "Value": "OK"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Oxnard              ",
+      "Value": "OX"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Sacramento          ",
+      "Value": "SC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "San Diego           ",
+      "Value": "SD"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "San Fransisco       ",
+      "Value": "SF"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "San Jose            ",
+      "Value": "SJ"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "San Bernardino      ",
+      "Value": "SN"
+    }
+  ],
+  "OSCode": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Military in Americas",
+      "Value": "AA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Alberta",
+      "Value": "AB"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Military in Eurpoe, Canada",
+      "Value": "AE"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Alaska",
+      "Value": "AK"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Alabama",
+      "Value": "AL"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Military in Pacific",
+      "Value": "AP"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Arkansas",
+      "Value": "AR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "American Samoa",
+      "Value": "AS"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Arizona",
+      "Value": "AZ"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "British Columbia",
+      "Value": "BC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "California",
+      "Value": "CA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Colorado",
+      "Value": "CO"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Connecticut",
+      "Value": "CT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Canal Zone",
+      "Value": "CZ"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "District of Columbia",
+      "Value": "DC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Delaware",
+      "Value": "DE"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Florida",
+      "Value": "FL"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Provisional Dist. of Franklin",
+      "Value": "FR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Georgia",
+      "Value": "GA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Foreign Military",
+      "Value": "GI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Guam",
+      "Value": "GU"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Hawaii",
+      "Value": "HI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Hilo, Hawaii",
+      "Value": "HI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Kauai, Hawaii",
+      "Value": "HI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Maui, Hawaii",
+      "Value": "HI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Iowa",
+      "Value": "IA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Idaho",
+      "Value": "ID"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Illinois",
+      "Value": "IL"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Indiana",
+      "Value": "IN"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Provisional Dist. of Keewatin",
+      "Value": "KE"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Kansas",
+      "Value": "KS"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Kentucky",
+      "Value": "KY"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Louisiana",
+      "Value": "LA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Massachusetts",
+      "Value": "MA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Manitoba",
+      "Value": "MB"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Maryland",
+      "Value": "MD"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Maine",
+      "Value": "ME"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Michigan",
+      "Value": "MI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Provisional Dist. of MacKenzie",
+      "Value": "MK"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Minnesota",
+      "Value": "MN"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Missouri",
+      "Value": "MO"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Mississippi",
+      "Value": "MS"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Montana",
+      "Value": "MT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Mexico",
+      "Value": "MX"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "New Brunswick",
+      "Value": "NB"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "North Carolina",
+      "Value": "NC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "North Dakota",
+      "Value": "ND"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Nebraska",
+      "Value": "NE"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Newfoundland",
+      "Value": "NF"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "New Hampshire",
+      "Value": "NH"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "New Jersey",
+      "Value": "NJ"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "New Mexico",
+      "Value": "NM"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Nova Scotia",
+      "Value": "NS"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Nevada",
+      "Value": "NV"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "New York",
+      "Value": "NY"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Ohio",
+      "Value": "OH"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Oklahoma",
+      "Value": "OK"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Ontario",
+      "Value": "ON"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Oregon",
+      "Value": "OR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Other Foreign Country",
+      "Value": "OT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Pennsylvania",
+      "Value": "PA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Prince Edward Island",
+      "Value": "PE"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Puerto Rico",
+      "Value": "PR"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Quebec",
+      "Value": "QU"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Rhode Island",
+      "Value": "RI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Saskatchewan",
+      "Value": "SA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "South Carolina",
+      "Value": "SC"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "South Dakota",
+      "Value": "SD"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Tennessee",
+      "Value": "TN"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Texas",
+      "Value": "TX"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Utah",
+      "Value": "UT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Virginia",
+      "Value": "VA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Virgin Islands",
+      "Value": "VI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Vermont",
+      "Value": "VT"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Washington",
+      "Value": "WA"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Wisconsin",
+      "Value": "WI"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "West Virginia",
+      "Value": "WV"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Wyoming",
+      "Value": "WY"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Yukon Territory",
+      "Value": "YU"
+    }
+  ],
+  "CommStatusIndicator": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Offense occurred in a commercial vehicle.                                                           ",
+      "Value": "C"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Driver was commercially licensed.                                                                   ",
+      "Value": "D"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Driver was transporting hazardous materials.                                                        ",
+      "Value": "H"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "No commercial indicator.                                                                            ",
+      "Value": "N"
+    }
+  ],
+  "ChgHearingType": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Telephone Interview                ",
+      "Value": "0"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Departmental Review                ",
+      "Value": "1"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Interview                          ",
+      "Value": "2"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Reexamination                      ",
+      "Value": "3"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Hearing                            ",
+      "Value": "4"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Priority Reexamination             ",
+      "Value": "6"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Telephone Hearing                  ",
+      "Value": "7"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Telephone Reexamination            ",
+      "Value": "8"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Driver Safety Driver Investigation ",
+      "Value": "9"
+    }
+  ],
+  "DSFieldOffices": null,
+  "HearingResults": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Dept. Review complete",
+      "Value": "0"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DNA, did not appear, notice returned unclaimed",
+      "Value": "1"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "DNA, did not appear, notice not returned unclained",
+      "Value": "2"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Subject appeared",
+      "Value": "3"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Subject appeared, waived formal notice of hearing",
+      "Value": "4"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Subject appeared, report received, incomplete",
+      "Value": "5"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Hearing cancelled at request of subject (13353B)",
+      "Value": "7"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Hearing cancelled by the Department",
+      "Value": "8"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Another appeared on behalf of subject",
+      "Value": "9"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "No contact",
+      "Value": "N"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Hearing transferred to different Driver Safety District Office",
+      "Value": "T"
+    }
+  ]
+}
