@@ -1,0 +1,161 @@
+{
+  "RequestorCode": "86301",
+  "Operator": "MPG",
+  "NetName": "#ADMV6LI",
+  "LoginId": "MWMPG4  ",
+  "DLNumber": null,
+  "ThreeCharacterName": null,
+  "TypeInput": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Add",
+      "Value": "A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Change",
+      "Value": "C"
+    }
+  ],
+  "LicenseLocation": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "License lost",
+      "Value": "60"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "License destroyed/Surrendered by subject",
+      "Value": "75"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "License destroyed/Mutilated",
+      "Value": "76"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Delete License Location",
+      "Value": "98"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Update Remail Date",
+      "Value": "99"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Issuance of license withheld/Surrendered by subject",
+      "Value": "X5"
+    }
+  ],
+  "ServiceCodes": [
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Select Option",
+      "Value": ""
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Mailed, not returned unclaimed prior to 6/30/95; Certified Mail after 6/30/95",
+      "Value": "A"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Served, signed document on file",
+      "Value": "B"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Personal Service document on file",
+      "Value": "D"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Acknowledge, no signature",
+      "Value": "H"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Return unclaimed",
+      "Value": "I"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Written notice served by officer",
+      "Value": "J"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Refused",
+      "Value": "K"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Deceased",
+      "Value": "L"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Verbal notice document on file",
+      "Value": "M"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Personal service",
+      "Value": "P"
+    },
+    {
+      "Disabled": false,
+      "Group": null,
+      "Selected": false,
+      "Text": "Unsuccessful personal service",
+      "Value": "R"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "loginId": "string",
+  "netName": "string",
+  "requestorCode": "string",
+  "operator": "string",
+  "dlNumber": "string",
+  "threeCharacterLastName": "string",
+  "typeInput": "string",
+  "dueDate": "string",
+  "reason": "string",
+  "destination": "string",
+  "changeToDate": "string",
+  "testDate": "string",
+  "dujResponse": "string",
+  "nextDLNumber": "string",
+  "error": true
+}

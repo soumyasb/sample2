@@ -1,0 +1,18 @@
+{
+  "loginId": "string",
+  "netName": "string",
+  "requestorCode": "string",
+  "operator": "string",
+  "dlNumber": "string",
+  "threeCharacterLastName": "string",
+  "serviceDate": "string",
+  "serviceCode": "string",
+  "originalEffectiveDate": "string",
+  "licenseLocation": "string",
+  "typeInput": "string",
+  "violationDate": "string",
+  "testDate": "string",
+  "duhResponse": "string",
+  "nextDLNumber": "string",
+  "error": true
+}
